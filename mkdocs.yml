@@ -1,0 +1,67 @@
+
+site_name: Bioinformatics Documentation
+
+repo_name: melbournebioinformatics/MelBioInf_docs
+repo_url: https://github.com/melbournebioinformatics/MelBioInf_docs
+google_analytics: ['UA-21794901-5', 'www.melbournebioinformatics.org.au/tutorials/']
+
+# needs pip install mkdocs-material
+theme: 'material'
+theme_dir: 'material-theme-overrides'
+extra:
+    feature:
+        tabs: false
+extra_css:
+  - 'extra.css'
+
+copyright: <a href="https://www.melbournebioinformatics.org.au/">Melbourne Bioinformatics</a>
+
+pages:
+- 'Home': 'index.md'
+- 'General Tutorials':
+  - 'Python Overview': 'tutorials/python_overview/python_overview.md'
+  - 'Using Git and Github for revision control': 'tutorials/using_git/Using_Git.md'
+  - 'Introduction to HPC': 'tutorials/hpc/index.md'
+  - 'Introduction to Unix': 'tutorials/unix/index.md'
+  - 'Launching a Personal GVL Server': 'tutorials/gvl_launch/gvl_launch.md'
+  - 'Introduction to Galaxy': 'tutorials/galaxy_101/galaxy_101.md'
+  - 'Galaxy Workflows': 
+    - 'Tutorial': 'tutorials/galaxy-workflows/galaxy-workflows.md'
+    - 'History Creation': 'tutorials/galaxy-workflows/history_creation.md'
+  - 'Introduction to GenomeSpace' : 'tutorials/genomespace/genomespace.md'
+  - 'Containerized Bioinformatics': 'tutorials/docker/docker.md'
+- 'Genomics Tutorials':
+  - 'Introduction to Variant Calling': 'tutorials/variant_calling_galaxy_1/variant_calling_galaxy_1.md'
+  - 'Variant Calling Advanced':
+    - 'Tutorial': 'tutorials/var_detect_advanced/var_detect_advanced.md'
+    - 'Background': 'tutorials/var_detect_advanced/var_detect_advanced_background.md'
+  - 'RNA-seq DGE Basic':
+    - 'Tutorial': 'tutorials/rna_seq_dge_basic/rna_seq_basic_tutorial.md'
+    - 'Tuxedo Protocol Tutorial': 'tutorials/rna_seq_dge_basic/rna_seq_basic_tuxedo.md'
+    - 'Background': 'tutorials/rna_seq_dge_basic/rna_seq_basic_background.md'
+  - 'RNA-seq DGE Advanced': 'tutorials/rna_seq_dge_advanced/rna_seq_advanced_tutorial.md'
+  - 'RNA-seq DGE Experimental Design': 'tutorials/rna_seq_exp_design/rna_seq_experimental_design.md'
+  - 'Microbial de novo Assembly for Illumina Data':
+    - 'Tutorial': 'tutorials/assembly/assembly.md'
+    - 'Method Background': 'tutorials/assembly/assembly-background.md'
+- 'Proteomics Tutorials':
+  - 'Identifying proteins from mass spectrometry data':
+    - 'Tutorial' : 'tutorials/proteomics_basic/proteomics_basic.md'
+    - 'Galaxy Background' : 'tutorials/proteomics_basic/background_galaxy.md'
+    - 'Data Formats Background' : 'tutorials/proteomics_basic/background_data_formats.md'
+    - 'Create find count items workflow' : 'tutorials/proteomics_basic/background_findcountitems_workflow.md'
+    - 'Protein Databases' : 'tutorials/proteomics_basic/background_protein_databases.md'
+    - 'Search Engines' : 'tutorials/proteomics_basic/background_search_engines.md'
+    - 'Protein Prophet' : 'tutorials/proteomics_basic/background_protein_prophet.md'
+- 'Protocols':
+  - 'De Novo Genome Assembly for Illumina Data': 'tutorials/assembly/assembly-protocol.md'
+
+extra_templates: [
+  'tutorials/hpc/slides.html',
+  'tutorials/unix/slides.html',
+]
+markdown_extensions: [
+  'markdown_include.include',
+  'showable',
+  'markdown.extensions.fenced_code',
+]
