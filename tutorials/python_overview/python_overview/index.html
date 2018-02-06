@@ -1,0 +1,2117 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.6.1">
+    
+    
+      
+        <title>Python Overview - Bioinformatics Documentation</title>
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr-56ade86843.js"></script>
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application-4d0d3f2fbf.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../../extra.css">
+    
+    
+  </head>
+  
+  
+  
+  
+    <body>
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="../../.." title="Bioinformatics Documentation" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  General Tutorials
+                </span>
+              
+            
+            Python Overview
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="md-header-nav__source">
+          
+            
+
+
+  
+
+
+  <a href="https://github.com/melbournebioinformatics/MelBioInf_docs" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      melbournebioinformatics/MelBioInf_docs
+    </div>
+  </a>
+
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    Bioinformatics Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/melbournebioinformatics/MelBioInf_docs" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      melbournebioinformatics/MelBioInf_docs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../guide_test/" title="Guides" class="md-nav__link">
+      Guides
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      General Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        General Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="./" title="Python Overview" class="md-nav__link md-nav__link--active">
+      Python Overview
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../using_git/Using_Git/" title="Using Git and Github for revision control" class="md-nav__link">
+      Using Git and Github for revision control
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../hpc/" title="Introduction to HPC" class="md-nav__link">
+      Introduction to HPC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../unix/" title="Introduction to Unix" class="md-nav__link">
+      Introduction to Unix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gvl_launch/gvl_launch/" title="Launching a Personal GVL Server" class="md-nav__link">
+      Launching a Personal GVL Server
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../galaxy_101/galaxy_101/" title="Introduction to Galaxy" class="md-nav__link">
+      Introduction to Galaxy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-7" type="checkbox" id="nav-3-7">
+    
+    <label class="md-nav__link" for="nav-3-7">
+      Galaxy Workflows
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-7">
+        Galaxy Workflows
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../galaxy-workflows/galaxy-workflows/" title="Tutorial" class="md-nav__link">
+      Tutorial
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../galaxy-workflows/history_creation/" title="History Creation" class="md-nav__link">
+      History Creation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../genomespace/genomespace/" title="Introduction to GenomeSpace" class="md-nav__link">
+      Introduction to GenomeSpace
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docker/docker/" title="Containerized Bioinformatics" class="md-nav__link">
+      Containerized Bioinformatics
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Genomics Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Genomics Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../variant_calling_galaxy_1/variant_calling_galaxy_1/" title="Introduction to Variant Calling" class="md-nav__link">
+      Introduction to Variant Calling
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Variant Calling Advanced
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        Variant Calling Advanced
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../var_detect_advanced/var_detect_advanced/" title="Tutorial" class="md-nav__link">
+      Tutorial
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../var_detect_advanced/var_detect_advanced_background/" title="Background" class="md-nav__link">
+      Background
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      RNA-seq DGE Basic
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        RNA-seq DGE Basic
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rna_seq_dge_basic/rna_seq_basic_tutorial/" title="Tutorial" class="md-nav__link">
+      Tutorial
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rna_seq_dge_basic/rna_seq_basic_tuxedo/" title="Tuxedo Protocol Tutorial" class="md-nav__link">
+      Tuxedo Protocol Tutorial
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rna_seq_dge_basic/rna_seq_basic_background/" title="Background" class="md-nav__link">
+      Background
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rna_seq_dge_advanced/rna_seq_advanced_tutorial/" title="RNA-seq DGE Advanced" class="md-nav__link">
+      RNA-seq DGE Advanced
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rna_seq_exp_design/rna_seq_experimental_design/" title="RNA-seq DGE Experimental Design" class="md-nav__link">
+      RNA-seq DGE Experimental Design
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+    
+    <label class="md-nav__link" for="nav-4-6">
+      Microbial de novo Assembly for Illumina Data
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-6">
+        Microbial de novo Assembly for Illumina Data
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../assembly/assembly/" title="Tutorial" class="md-nav__link">
+      Tutorial
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../assembly/assembly-background/" title="Method Background" class="md-nav__link">
+      Method Background
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Proteomics Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Proteomics Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1">
+    
+    <label class="md-nav__link" for="nav-5-1">
+      Identifying proteins from mass spectrometry data
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-1">
+        Identifying proteins from mass spectrometry data
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../proteomics_basic/proteomics_basic/" title="Tutorial" class="md-nav__link">
+      Tutorial
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../proteomics_basic/background_galaxy/" title="Galaxy Background" class="md-nav__link">
+      Galaxy Background
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../proteomics_basic/background_data_formats/" title="Data Formats Background" class="md-nav__link">
+      Data Formats Background
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../proteomics_basic/background_findcountitems_workflow/" title="Create find count items workflow" class="md-nav__link">
+      Create find count items workflow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../proteomics_basic/background_protein_databases/" title="Protein Databases" class="md-nav__link">
+      Protein Databases
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../proteomics_basic/background_search_engines/" title="Search Engines" class="md-nav__link">
+      Search Engines
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../proteomics_basic/background_protein_prophet/" title="Protein Prophet" class="md-nav__link">
+      Protein Prophet
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Protocols
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Protocols
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../assembly/assembly-protocol/" title="De Novo Genome Assembly for Illumina Data" class="md-nav__link">
+      De Novo Genome Assembly for Illumina Data
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="authors">Authors:</h1>
+<ul>
+<li>
+<p>Bernie Pope, Melbourne Bioinformatics (formerly VLSCI)</p>
+</li>
+<li>
+<p>Catherine de Burgh-Day, Dept. of Physics, The University of Melbourne</p>
+</li>
+</ul>
+<h1 id="general-information">General information</h1>
+<ul>
+<li>
+<p>Python modules are stored in files containing a ".py" suffix (e.g solver.py).</p>
+</li>
+<li>
+<p>The main implementation of Python is called CPython (it is written in C). It is byte-code interpreted.</p>
+</li>
+<li>
+<p>Python can be used in two modes: interactive and scripted. In interactive mode you enter a program fragment and Python evaluates
+  it immediately and then prints the result before prompting for a
+  new input. The interactive prompt is usually rendered as the
+  <em>chevron</em> <code>&gt;&gt;&gt;</code>. In scripted mode your program is stored in one
+  or more files which are executed as one monolithic entity. Such
+  programs behave like ordinary applications.</p>
+</li>
+<li>
+<p>Python has automatic memory management (via garbage collection). Memory is allocated automatically as needed and freed
+  automatically when no longer used.</p>
+</li>
+</ul>
+<h2 id="python-2-versus-python-3">Python 2 versus Python 3</h2>
+<p>Currently there are two distinct flavours of Python available:</p>
+<ul>
+<li>
+<p>Python 2 (2.7.10 at the time of writing)</p>
+</li>
+<li>
+<p>Python 3 (3.4.3 at the time of writing)</p>
+</li>
+</ul>
+<p>Python 3 is the new and improved version of the language. Python 3 is
+not entirely backwards compatible, but the two versions share much in
+common. Version 2 is now in maintenance mode; new features will only be
+added to version 3. The public transition from 2 to 3 has been slower
+than some people would like. You are encouraged to use version 3 where
+possible. These notes are generally compatible with both versions, but
+we will point out key differences where necessary.</p>
+<h2 id="indentation-for-grouping-code-blocks">Indentation for grouping code blocks</h2>
+<ul>
+<li>
+<p>Python uses indentation to group code blocks. Most other languages use some kind of brackets for grouping.</p>
+</li>
+<li>
+<p>The recommended style is to use 4 space characters for a single indent (thus 8 spaces for two indents and so forth).</p>
+</li>
+<li>
+<p>You are encouraged <strong>not</strong> to use tabs for indentation because there is no standard width for a tab.</p>
+</li>
+<li>
+<p>Most good text editors can be configured so that that tab key is rendered as 4 space characters when editing Python code.</p>
+</li>
+</ul>
+<h2 id="style-guide">Style Guide</h2>
+<p>A popular style guide for Python is known as <a href="https://www.python.org/dev/peps/pep-0008/">PEP 0008</a>, there is a
+corresponding tool called <a href="https://pypi.python.org/pypi/pep8">pep8</a> which will check your code against
+the guide and report any transgressions.</p>
+<p><strong>Example, Python compared to C:</strong></p>
+<p>Python program for computing factorial:</p>
+<pre><code class="python"># Compute factorial of n,
+# assuming n &gt;= 0
+
+def factorial(n):
+  result = 1
+  while n &gt; 0:
+      result *= n
+      n -= 1
+  return result
+
+print(factorial(10))
+</code></pre>
+
+<p>C program for computing factorial:</p>
+<pre><code class="c">#include &lt;stdio.h&gt;
+
+/* Compute factorial of n,
+  assuming n &gt;= 0 */
+
+int factorial(int n) {
+   int result = 1;
+
+   while (n &gt; 0) {
+      result *= n;
+      n -= 1;
+   }
+   return result;
+}
+
+int main(void) {
+   printf(&quot;%d\n&quot;, factorial(10));
+}
+</code></pre>
+
+<p>Things to note:</p>
+<ul>
+<li>
+<p>The difference in commenting style.</p>
+</li>
+<li>
+<p>C programs are statically typed, and you must declare the type of functions and variables. Python is dynamically typed.</p>
+</li>
+<li>
+<p>Code blocks in C are grouped by braces { }; Python uses indentation for grouping.</p>
+</li>
+<li>
+<p>The C program must have a main function. Python does not require a
+    main function, it just executes the top-level statements of the
+    module.</p>
+</li>
+<li>
+<p>The result returned by the C function is limited to the size of a
+    machine integer (say 32 bits). However, the result returned by the
+    Python function is unlimited in its size - it can compute
+    arbitrarily large factorials (up to the limit of the available
+    memory in your computer).</p>
+</li>
+</ul>
+<h2 id="comments">Comments</h2>
+<p>Program comments start with a hash character "#" and continue until the
+end of the line. There are no multi-line comment markers, but that can
+sometimes be faked with multi-line string literals.</p>
+<p><strong>Examples:</strong></p>
+<pre><code class="python"># This is a comment.
+# This is another comment.
+x = 5 # This is a comment that follows some code.
+'''This is
+a multi-line
+string literal
+which can sometimes act like
+a
+comment.
+'''
+</code></pre>
+
+<h2 id="running-a-python-program">Running a Python program</h2>
+<p>There are many ways to run Python code:</p>
+<ul>
+<li>
+<p>You can run the interpreter in interactive mode. On Unix (Linux, OS
+    X) you can run the python command at the command line.</p>
+</li>
+<li>
+<p>If you have Python code stores in a file, say example.py, you can
+    run it from the command line like so: python example.py</p>
+</li>
+<li>
+<p>You can use one of several integrated programming environments.
+    Python ships with a fairly minimal one called <a href="https://docs.python.org/2/library/idle.html">IDLE</a>, though
+    many scientists prefer the more comprehensive <a href="http://ipython.org/">IPython</a>.</p>
+</li>
+<li>
+<p>If your Python code was installed as a package (see below), then it
+    may be executed like an ordinary application without the user
+    being aware of how the program was implemented.</p>
+</li>
+</ul>
+<h2 id="objects-and-types">Objects and types</h2>
+<ul>
+<li>
+<p>Every value in Python is an <em>object</em> (including functions!).</p>
+</li>
+<li>
+<p>Objects can have attributes and methods, which are accessed via the
+    dot "." operator.</p>
+</li>
+<li>
+<p>All objects have a type.</p>
+</li>
+<li>
+<p>Types are also objects!</p>
+</li>
+<li>
+<p>Python is dynamically typed: you may get type errors at runtime but
+    never at compile time.</p>
+</li>
+<li>
+<p><code>type(x)</code> returns the type of x.</p>
+</li>
+<li>
+<p>Python variables may be assigned to values of different types at
+    different points in the program.</p>
+</li>
+</ul>
+<p><strong>Interactive examples (Python 3):</strong></p>
+<pre><code>&gt;&gt;&gt; # Create a list, assign to the variable x
+&gt;&gt;&gt; x = [3, 1, 2, 3]
+&gt;&gt;&gt; # Ask for the type of the value assigned to x
+&gt;&gt;&gt; type(x)
+&lt;class 'list'&gt;
+&gt;&gt;&gt; # Ask for the type of the first item in the list (an integer)
+&gt;&gt;&gt; type(x[0])
+&lt;class 'int'&gt;
+&gt;&gt;&gt; # Count the number of times 3 appears in the list
+&gt;&gt;&gt; # by calling the count method
+&gt;&gt;&gt; x.count(3)
+2
+&gt;&gt;&gt; # Sort the contents of the list in-place.
+&gt;&gt;&gt; # Note that this mutates the list object!
+&gt;&gt;&gt; # Also note that Python does not print the result in this case.
+&gt;&gt;&gt; x.sort()
+&gt;&gt;&gt; # Ask Python to show the value of the list
+&gt;&gt;&gt; # assigned to the variable x (note it is now sorted)
+&gt;&gt;&gt; x
+[1, 2, 3, 3]
+&gt;&gt;&gt; # Assign x to an object of a different type (a float)
+&gt;&gt;&gt; x = 3.142
+&gt;&gt;&gt; type(x)
+&lt;class 'float'&gt;
+</code></pre>
+
+<h1 id="booleans">Booleans</h1>
+<ul>
+<li>Represent truth values</li>
+<li>Values: <code>True</code>, <code>False</code></li>
+<li>Type: <code>bool</code></li>
+<li>Operators: <code>and</code>, <code>or</code>, <code>not</code></li>
+<li><code>bool(x)</code> will convert x to a boolean. The heuristic is that empty things and zero-ish things are <code>False</code>, everything else is <code>True</code> (but the user can override for their own types).<ul>
+<li><code>False</code> values:<ul>
+<li><code>False</code></li>
+<li><code>0</code> (zero integer)</li>
+<li><code>0.0</code> (zero float)</li>
+<li><code>{}</code> (empty dictionary)</li>
+<li><code>()</code> (empty tuple)</li>
+<li><code>[]</code> (empty list)</li>
+<li><code>''</code> (empty string)</li>
+<li><code>None</code></li>
+</ul>
+</li>
+<li><code>True</code> values:<ul>
+<li>everything else</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>In numerical contexts <code>True</code> is considered equal to the integer <code>1</code> and
+    <code>False</code> is considered equal to the integer <code>0</code>. However, these
+    conversions are a common cause of bugs and should be avoided.</li>
+<li>Python will automatically test the <em>truthiness</em> of a value if it
+    appears in a boolean context.</li>
+</ul>
+<p><strong>Interactive examples:</strong></p>
+<pre><code class="python">&gt;&gt;&gt; not True
+False
+&gt;&gt;&gt; not False
+True
+&gt;&gt;&gt; not ()
+True
+&gt;&gt;&gt; not [1,2,3]
+False
+&gt;&gt;&gt; True and False
+False
+&gt;&gt;&gt; True and ()
+()
+</code></pre>
+
+<h1 id="conditional-statements">Conditional Statements</h1>
+<ul>
+<li>Conditional statements use the keywords: <code>if</code>, <code>elif</code>, <code>else</code>. The syntax
+    for a conditional statement is:</li>
+</ul>
+<pre><code class="python">if expression:
+    statement-block
+elif expression:
+    statement-block
+...
+else:
+    statement-block
+</code></pre>
+
+<ul>
+<li>
+<p>A conditional statement must have exactly one <code>if</code> part. It may have
+    zero or more <code>elif</code> parts, and a single optional <code>else</code> part at the
+    end.</p>
+</li>
+<li>
+<p>The <code>if</code> and <code>elif</code> parts test the value of their boolean expressions.
+    If the expression evaluates to something which is <code>True</code> or can be
+    converted to <code>True</code> (see the rules for Booleans above) then the
+    statement block immediately beneath that part is executed.
+    Otherwise the following condition (if any) is tried. The <code>else</code>
+    part, if it exists, is always and only executed if no preceding
+    condition was <code>True</code>.</p>
+</li>
+</ul>
+<p><strong>Interactive examples:</strong></p>
+<pre><code>&gt;&gt;&gt; if []:
+...     print(&quot;Was considered True&quot;)
+... else:
+...     print(&quot;Was considered False&quot;)
+...
+Was considered False
+</code></pre>
+
+<h1 id="numbers-and-basic-mathematics">Numbers and basic mathematics</h1>
+<h2 id="integers">Integers</h2>
+<ul>
+<li>
+<p>Represent whole negative and positive numbers (and zero).</p>
+</li>
+<li>
+<p>The range of integer values is unbounded (up to some limit defined
+    by how much memory you have on your computer).</p>
+</li>
+<li>
+<p>Python 2 distinguishes between two integer types <code>int</code> and <code>long</code>, and
+    automatically promotes <code>int</code> to long where necessary, whereas Python
+    3 considers them all one type called <code>int</code>.</p>
+</li>
+<li>
+<p>Base ten is the default literal notation: <code>42</code> (means <code>(4 * 10) + 2</code>)</p>
+</li>
+<li>
+<p>Hexadecimal literals start with <code>0x</code>, octal literals start with <code>0o</code>,
+    binary literals start with <code>0b</code>.</p>
+</li>
+<li>
+<p><code>int(x)</code> will try to convert x to an integer, x can be another numeric
+    type (including booleans) or a string. You may specify an optional
+    base for the conversion.</p>
+</li>
+</ul>
+<p><strong>Interactive examples (in Python 3):</strong></p>
+<pre><code>&gt;&gt;&gt; 2 ** 200
+1606938044258990275541962092341162602522202993782792835301376
+&gt;&gt;&gt; 0x10
+16
+&gt;&gt;&gt; 0b10
+2
+&gt;&gt;&gt; -0 == 0
+True
+&gt;&gt;&gt; int(&quot;123&quot;)
+123
+&gt;&gt;&gt; int(&quot;3.142&quot;)
+Traceback (most recent call last):
+File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+    ValueError: invalid literal for int() with base 10: '3.142'
+</code></pre>
+
+<h1 id="floating-point-numbers">Floating Point Numbers</h1>
+<ul>
+<li>
+<p>Represent a finite approximation to the real numbers.</p>
+</li>
+<li>
+<p>Type: <code>float</code>.</p>
+</li>
+<li>
+<p>(On most platforms) Python uses IEEE-754 double precision floating
+    point numbers which provide 53 bits of precision.</p>
+</li>
+<li>
+<p><code>sys.float_info</code> contains details about max, min, epsilon etcetera.</p>
+</li>
+<li>
+<p>Literals can be in ordinary notation or in exponential notation:</p>
+<ul>
+<li>Ordinary: <code>3.142</code></li>
+<li>Exponential: <code>314.2e-2</code></li>
+</ul>
+</li>
+<li>
+<p>Ordinary notation requires a point <code>.</code>, but digits following the
+    point are optional.</p>
+</li>
+<li>
+<p>Exponential notation does not require a point unless you have a
+    fractional component.</p>
+</li>
+<li>
+<p><code>float(x)</code> will try to convert x to a floating point number, x can be
+    another numeric type (including booleans) or a string.</p>
+</li>
+<li>
+<p>Numeric operators will automatically convert integer arguments to
+    floating point in mixed-type expressions.</p>
+</li>
+<li>
+<p>In Python 3 the division operator <code>/</code> computes a floating point result
+    for integer arguments. However, in Python 2 it computes an integer
+    result for integer arguments.</p>
+</li>
+</ul>
+<p><strong>Interactive examples:</strong></p>
+<pre><code>&gt;&gt;&gt; type(3.142)
+&lt;class 'float'&gt;
+&gt;&gt;&gt; type(12)
+&lt;class 'int'&gt;
+&gt;&gt;&gt; 3.142 + 12
+15.142
+&gt;&gt;&gt; 3.142 == 314.2e-2
+True
+&gt;&gt;&gt; 3. == 3.0
+True
+&gt;&gt;&gt; 1/0
+Traceback (most recent call last):
+File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+ZeroDivisionError: division by zero
+&gt;&gt;&gt; # Integer divided by integer yields a float in Python 3
+&gt;&gt;&gt; 10 / 3
+3.3333333333333335
+&gt;&gt;&gt; float(&quot;123&quot;)
+123.0
+&gt;&gt;&gt; float(&quot;3.142&quot;)
+3.142
+</code></pre>
+
+<h1 id="complex-numbers">Complex Numbers</h1>
+<ul>
+<li>
+<p>Represent a finite approximation to the complex numbers.</p>
+</li>
+<li>
+<p>Type: <code>complex</code></p>
+</li>
+<li>
+<p>A pair of floating point numbers: real +/- imaginary.</p>
+</li>
+<li>
+<p>The real part is optional (defaults to 0). The imaginary part is
+    followed immediately by the character <code>j</code>.</p>
+</li>
+</ul>
+<p><strong>Interactive Examples:</strong></p>
+<pre><code>&gt;&gt;&gt; 5j + 3j
+8j
+&gt;&gt;&gt; 2-5j
+(2-5j)
+&gt;&gt;&gt; 2-5j + 3j
+(2-2j)
+</code></pre>
+
+<h1 id="numeric-operators">Numeric Operators</h1>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Operation</th>
+<th>Precedence</th>
+<th>Associativity</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>+</code></td>
+<td>add</td>
+<td>low</td>
+<td>left</td>
+<td>Can also be used to concatenate strings together.</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>multiply</td>
+<td>medium</td>
+<td>left</td>
+<td></td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td>subtract</td>
+<td>low</td>
+<td>left</td>
+<td></td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td>divide</td>
+<td>medium</td>
+<td>left</td>
+<td>In Python 3 the result is always a floating point number. In Python 2 the result is an integer if both operands are integers.</td>
+</tr>
+<tr>
+<td><code>//</code></td>
+<td>floor-divide</td>
+<td>medium</td>
+<td>left</td>
+<td>divide then floor, result is an integer</td>
+</tr>
+<tr>
+<td><code>**</code></td>
+<td>exponent</td>
+<td>high</td>
+<td>right</td>
+<td></td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>modulus</td>
+<td>medium</td>
+<td>left</td>
+<td>remainder after division</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Interactive Examples (Python 3):</strong></p>
+<pre><code>&gt;&gt;&gt; 3 + 4 * 5
+23
+&gt;&gt;&gt; (3 + 4) * 5
+35
+&gt;&gt;&gt; 10 / 3
+3.3333333333333335
+&gt;&gt;&gt; 10 // 3
+3
+&gt;&gt;&gt; 10 % 3
+1
+&gt;&gt;&gt; 2 ** 3 ** 4
+2417851639229258349412352
+&gt;&gt;&gt; (2 ** 3) ** 4
+4096
+</code></pre>
+
+<h1 id="strings">Strings</h1>
+<ul>
+<li>
+<p>Represent text</p>
+</li>
+<li>
+<p>Type: <code>str</code></p>
+</li>
+<li>
+<p>In Python 3, the str type contains Unicode characters.</p>
+</li>
+<li>
+<p>In Python 2, the str type contains ASCII characters (sometimes
+    called byte strings). Python 2 has a separate type for unicode
+    strings, the type is called unicode; literals of this type are
+    prefixed by the letter <code>u</code>.</p>
+</li>
+<li>
+<p>String literals must be quoted. There are 3 quoting styles:</p>
+<ul>
+<li>
+<p>single quote characters: <code>'hello'</code></p>
+</li>
+<li>
+<p>double quote characters: <code>"hello"</code></p>
+</li>
+<li>
+<p>triple quote characters: <code>'''hello'''</code> (three single quotes in a
+    row) or <code>"""hello"""</code> (three double quote characters in a row)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The single quote and double quote versions of strings have the same
+    value. The purpose of the different quotation styles is to make it
+    convenient to have literal quotation marks inside strings
+    (avoiding the need to escape the quote character). For example:</p>
+</li>
+</ul>
+<pre><code>&gt;&gt;&gt; &quot;This inverted comma won't be a problem inside quotation marks&quot;
+&quot;This inverted comma won't be a problem inside quotation marks&quot;
+&gt;&gt;&gt; 'this &quot;quote&quot; will work'
+'this &quot;quote&quot; will work'
+&gt;&gt;&gt; 'this isn't going to work though'
+File &quot;&lt;stdin&gt;&quot;, line 1
+'this isn't going to work though'
+^ SyntaxError: invalid syntax
+</code></pre>
+
+<ul>
+<li>
+<p>Triple quoted strings can be written on multiple lines. The line
+    breaks will be preserved within the string. Useful for docstrings
+    (see section on functions).</p>
+</li>
+<li>
+<p>The usual set of escape characters are supported:</p>
+<ul>
+<li>
+<p><code>\n</code> newline</p>
+</li>
+<li>
+<p><code>\t</code> tab</p>
+</li>
+<li>
+<p><code>\\</code> backslash</p>
+</li>
+<li>
+<p><code>\'</code> single quote</p>
+</li>
+<li>
+<p><code>\"</code> double quote</p>
+</li>
+<li>
+<p>and many more</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Python does not have a separate type for representing individual
+    characters. Instead you use strings of length one.</p>
+</li>
+<li>
+<p>Strings are iterable. If you iterate over a string (using a for
+    loop) you process it one character at a time from left to right.</p>
+</li>
+<li>
+<p>Strings can be indexed to obtain individual characters, e.g. <code>s[5]</code></p>
+</li>
+<li>
+<p>Indices are zero-based (but you may also use negative indices to
+    access items with respect to the right end of the string).</p>
+</li>
+<li>
+<p>Strings are immutable: you cannot modify a string once it has been
+    created.</p>
+</li>
+</ul>
+<p><strong>Interactive Examples (Python 3):</strong></p>
+<pre><code>&gt;&gt;&gt; type(&quot;hello&quot;)
+&lt;class 'str'&gt;
+&gt;&gt;&gt; &quot;hello&quot; == 'hello'
+True
+&gt;&gt;&gt; '''This string
+... is on
+... multiple
+... lines'''
+'This string\\nis on\\nmultiple\\nlines'
+&gt;&gt;&gt; &quot;bonjour&quot;.upper()
+'BONJOUR'
+&gt;&gt;&gt; len(&quot;bonjour&quot;)
+7
+&gt;&gt;&gt; &quot;bonjour&quot;.startswith(&quot;b&quot;)
+True
+&gt;&gt;&gt; &quot;cat,sat,flat&quot;.split(&quot;,&quot;)
+['cat', 'sat', 'flat']
+&gt;&gt;&gt; # Print the first 5 Chinese unicode characters
+&gt;&gt;&gt; print('\u4E00\u4E01\u4E02\u4E03\u4E04')
+一丁丂七丄
+&gt;&gt;&gt; x = &quot;floyd&quot;
+&gt;&gt;&gt; x[0]
+'f'
+&gt;&gt;&gt; &quot;hello&quot; + &quot; &quot; + &quot;world&quot;
+'hello world'
+</code></pre>
+
+<p><strong>Example program:</strong></p>
+<pre><code class="python"># Prompt the user to input a string:
+input = raw_input(&quot;Enter string: &quot;)
+
+# Count the number of vowels in the input string
+vowels = 'aeiou'
+count = 0
+
+for char in input:
+    if char in vowels:
+        count += 1
+
+# Print the count to the standard output
+print(count)
+</code></pre>
+
+<p>Example usage of the above program from the operating system command
+prompt, assuming the program is saved in a file called <code>vowels.py</code>:</p>
+<pre><code class="no-highlight">python vowels.py
+Enter string: abracadabra
+5
+</code></pre>
+
+<h1 id="lists">Lists</h1>
+<ul>
+<li>
+<p>Represent mutable ordered sequences of values.</p>
+</li>
+<li>
+<p>Type: <code>list</code></p>
+</li>
+<li>
+<p>List literals are written in between square brackets, e.g. <code>[1, 2, 3]</code></p>
+</li>
+<li>
+<p>List elements can be objects of any type (including other lists).</p>
+</li>
+<li>
+<p>Like strings, lists can be indexed like so: <code>x[3]</code></p>
+</li>
+<li>
+<p>Indices are zero-based (but you may also use negative indices to
+    access items with respect to the right end of the list).</p>
+</li>
+<li>
+<p>Lists are mutable. You can update items, delete items and add new
+    items.</p>
+</li>
+<li>
+<p>Indexing into a list is a constant time (amortised) operation.</p>
+</li>
+</ul>
+<p><strong>Interactive Examples:</strong></p>
+<pre><code>&gt;&gt;&gt; type([1, 2, 3])
+&lt;class 'list'&gt;
+&gt;&gt;&gt; x = []
+&gt;&gt;&gt; len(x)
+0
+&gt;&gt;&gt; x.append(&quot;hello&quot;)
+&gt;&gt;&gt; x
+['hello']
+&gt;&gt;&gt; len(x)
+1
+&gt;&gt;&gt; x[0]
+'hello'
+&gt;&gt;&gt; x.insert(0, True)
+&gt;&gt;&gt; x
+[True, 'hello']
+&gt;&gt;&gt; del x[1]
+&gt;&gt;&gt; x
+[True]
+&gt;&gt;&gt; x += [42, &quot;Newton&quot;, 3.142]
+&gt;&gt;&gt; x
+[True, 42, 'Newton', 3.142]
+</code></pre>
+
+<h1 id="dictionaries">Dictionaries</h1>
+<ul>
+<li>
+<p>Represent finite mappings from keys to values.</p>
+</li>
+<li>
+<p>Are implemented as <a href="https://en.wikipedia.org/wiki/Hash_table">hash tables</a>. The key objects must be hashable
+    (which rules out mutable objects, such as lists).</p>
+</li>
+<li>
+<p>Type: <code>dict</code></p>
+</li>
+<li>
+<p>Dictionary literals are written inside curly brackets, with
+    key-value pairs separated by colons: e.g. <code>{12: "XII", 6: "VI"}</code></p>
+</li>
+<li>
+<p>Dictionaries can be indexed by keys. If the key exists in the
+    dictionary its corresponding value is returned, otherwise a
+    <code>KeyError</code> exception is raised.</p>
+</li>
+<li>
+<p>The cost of indexing a dictionary is proportional to the time taken
+    to hash the key. For many keys this can be considered constant
+    time. For variable sized objects, such as strings, this can be
+    considered to be proportional to the size of the object.</p>
+</li>
+<li>
+<p>Iterating over a dictionary yields one key at a time. All keys in
+    the dictionary are visited exactly once. The order in which the
+    keys are visited is arbitrary.</p>
+</li>
+<li>
+<p>You may test if an object is a key of a dictionary using the in
+    operator.</p>
+</li>
+</ul>
+<p><strong>Interactive Examples:</strong></p>
+<pre><code>&gt;&gt;&gt; type({12: &quot;XII&quot;, 6: &quot;VI&quot;})
+&lt;class 'dict'&gt;
+&gt;&gt;&gt; friends = {}
+&gt;&gt;&gt; friends['Fred'] = ['Barney', 'Dino']
+&gt;&gt;&gt; friends
+{'Fred': ['Barney', 'Dino']}
+&gt;&gt;&gt; friends['Fred']
+['Barney', 'Dino']
+&gt;&gt;&gt; friends['Barney']
+Traceback (most recent call last):
+File &quot;\&lt;stdin\&gt;&quot;, line 1, in \&lt;module\&gt;
+KeyError: 'Barney'
+&gt;&gt;&gt; friends['Wilma'] = ['Betty']
+&gt;&gt;&gt; friends
+{'Fred': ['Barney', 'Dino'], 'Wilma': ['Betty']}
+&gt;&gt;&gt; friends.keys()
+dict_keys(['Fred', 'Wilma'])
+&gt;&gt;&gt; friends.values()
+dict_values([['Barney', 'Dino'], ['Betty']])
+&gt;&gt;&gt; 'Dino' in friends
+False
+</code></pre>
+
+<p><strong>Example program:</strong></p>
+<pre><code class="python"># Compute and print a histogram of a sequence of integers entered
+# on standard input, one number per line
+
+import sys
+
+histogram = {}
+
+# Iterate over each line in the standard input
+for line in sys.stdin:
+    # Parse the next input as an integer
+    next_integer = int(line)
+    # Update the histogram accordingly
+    if next_integer in histogram:
+        # We've seen this integer before
+        histogram[next_integer] += 1
+    else:
+        # First occurrence of this integer in the input
+        histogram[next_integer] = 1
+
+# Print each key: value pair in the histogram in ascending
+# sorted order of keys
+for key in sorted(histogram):
+    print(&quot;{} {}&quot;.format(key, histogram[key]))s
+</code></pre>
+
+<p>Example usage of the above program from the operating system command
+prompt, assuming the program is saved in a file called <code>histo.py</code>:</p>
+<pre><code class="no-highlight">python histo.py
+</code></pre>
+
+<p>User types in a sequence of integers to the program, one per line, and
+presses control-d to terminate the input:</p>
+<pre><code class="no-highlight">3
+43
+12
+19
+3
+12
+12
+43
+</code></pre>
+
+<p>Program prints its output:</p>
+<pre><code class="no-highlight">3 2
+12 3
+19 1
+43 2
+</code></pre>
+
+<h1 id="tuples">Tuples</h1>
+<ul>
+<li>
+<p>Represent <em>immutable</em> ordered sequences of values.</p>
+</li>
+<li>
+<p>Very much like lists except they cannot be modified once created.</p>
+</li>
+<li>
+<p>Type: <code>tuple</code></p>
+</li>
+<li>
+<p>Literals are written in between parentheses: <code>(1, 2, 3)</code></p>
+</li>
+<li>
+<p>The can be used as keys in dictionaries (unlike lists).</p>
+</li>
+</ul>
+<h1 id="loops">Loops</h1>
+<h2 id="while-loops">While loops</h2>
+<ul>
+<li>
+<p>Iterate until condition is <code>False</code></p>
+</li>
+<li>
+<p>Syntax:</p>
+</li>
+</ul>
+<pre><code class="python">while expression:
+    statement_block
+</code></pre>
+
+<ul>
+<li>The value of the boolean expression is tested. If it evaluates to
+    <code>True</code> then the statement block is executed once, before repeating
+    the loop. If it evaluates to False then the program continues
+    execution immediately after the loop.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code class="python">def factorial(n):
+    result = 1
+    while n &gt; 0:
+        result *= n
+        n -= 1
+    return result
+</code></pre>
+
+<h2 id="for-loops">For loops</h2>
+<ul>
+<li>
+<p>Iterate over each item in a collection (e.g. list, string, tuple,
+    dictionary, file).</p>
+</li>
+<li>
+<p>Syntax:</p>
+</li>
+</ul>
+<pre><code class="python">for variable in expression:
+    statement_block
+</code></pre>
+
+<ul>
+<li>
+<p>Each item from the iterator expression is selected and assigned to
+    the variable, then the statement block is executed. The loop ends
+    when every item in the iterator has been visited.</p>
+</li>
+<li>
+<p>The order of items visited in the iterator depends on the type of
+    the iterator. Lists, strings and tuples proceed in a left-to-right
+    fashion. Files proceed one line at a time. Dictionaries proceed in
+    an arbitrary order.</p>
+</li>
+<li>
+<p>The <code>range()</code> function is useful for generating iterators of numbers
+    within a range. Note that the lower bound is inclusive and the
+    upper bound is exclusive.</p>
+</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code>def factorial(n):
+    result = 1
+    for item in range(n + 1):
+        result *= item
+    return result
+</code></pre>
+
+<h2 id="break-and-continue">Break and continue</h2>
+<ul>
+<li>
+<p>Both types of loops support the <code>break</code> and <code>continue</code> keywords.</p>
+</li>
+<li>
+<p><code>break</code> terminates the loop immediately.</p>
+</li>
+<li>
+<p><code>continue</code> jumps immediately back to the start of the loop.</p>
+</li>
+<li>
+<p>They can sometimes simplify the conditional logic of a loop, but
+    should be used sparingly.</p>
+</li>
+</ul>
+<h1 id="functions">Functions</h1>
+<ul>
+<li>
+<p>Allow you to define reusable abstractions. Sometimes called
+    <em>procedures</em>.</p>
+</li>
+<li>
+<p>Are generally defined at the top level of a module, and can also be
+    nested.</p>
+</li>
+<li>
+<p>Type: <code>function</code></p>
+</li>
+<li>
+<p>Named functions are bound to a variable name and may have complex
+    bodies.</p>
+</li>
+<li>
+<p>Anonymous functions are used in-line, and may only have expression
+    bodies.</p>
+</li>
+<li>
+<p>Named function syntax:</p>
+</li>
+</ul>
+<pre><code>def variable(parameter_list):
+    statement_block
+</code></pre>
+
+<ul>
+<li>Anonymous function syntax:</li>
+</ul>
+<pre><code>lambda parameter_list: expression
+</code></pre>
+
+<p><strong>Example:</strong></p>
+<pre><code class="python">def is_leap_year(year):
+    if year % 4 == 0 and year % 100 != 0:
+        return True
+    else:
+        return year % 400 == 0
+
+for year in range(2000, 2100 + 1):
+    result = is_leap_year(year)
+    print(&quot;{} {}&quot;.format(year, result))
+</code></pre>
+
+<p><strong>Anonymous function example:</strong></p>
+<pre><code class="python">&gt;&gt;&gt; squared = lambda x: x ** 2
+&gt;&gt;&gt; squared(2)
+4
+&gt;&gt;&gt; list(map(lambda x: x + 1, [1, 2, 3]))
+[2, 3, 4]
+</code></pre>
+
+<h1 id="input-and-output">Input and output</h1>
+<ul>
+<li>
+<p>The <code>print</code> function is useful for displaying text (and other values
+    converted to text).</p>
+</li>
+<li>
+<p>In Python 2 <code>print</code> was a special keyword. In Python 3 it is a
+    function defined in the builtins.</p>
+</li>
+<li>
+<p>Fancy string formatting can be done with the format method on
+    strings. Older Python code uses the string interpolation operator
+    for the same task <code>%</code>, but its use is now discouraged.</p>
+</li>
+<li>
+<p>Files must be opened before than can be manipulated. A file can be
+    opened in different modes: read <code>"r"</code>, write <code>"w"</code>, read-write <code>"r+"</code>,
+    and append <code>"a"</code>. Opening a new file in write or append modes
+    creates a new file. Opening an existing file in write mode
+    overwrites its contents from the start. Opening an existing file
+    in append mode adds new content at the end of the old content.</p>
+</li>
+<li>
+<p>When you are finished processing a file you should close it as soon
+    as possible. Closing a file releases limited operating system
+    resources, and ensures that any pending buffered writes a flushed
+    to the storage system.</p>
+</li>
+<li>
+<p>Certain file types have libraries for convenient processing. One
+    example is the CSV (comma separated values) library for processing
+    tabular data. It is very handy for working with spreadsheets.</p>
+</li>
+<li>
+<p>The command line arguments of a Python program are contained in a
+    list called <code>sys.argv</code> (it is a variable exported from the <code>sys</code>
+    module). For complex program you should consider using a command
+    line argument parsing library such as <a href="https://docs.python.org/3/library/argparse.html">argparse</a>.</p>
+</li>
+</ul>
+<p><strong>Example program:</strong></p>
+<pre><code># Count the number of words and lines in a file
+
+import sys
+
+# Get the input file name from the command line arguments
+filename = sys.argv[1]
+
+# Open the file
+file = open(filename)
+
+# Count the number of lines in the file
+num_lines = 0
+num_words = 0
+
+for line in file:
+    num_lines += 1
+    num_words += len(line.split())
+
+file.close()
+
+print(&quot;Number of lines and words in {}: {} {}&quot; \
+        .format(filename, num_lines, num_words))
+</code></pre>
+
+<h1 id="advanced-topics">Advanced Topics</h1>
+<h2 id="classes">Classes</h2>
+<ul>
+<li>
+<p>Classes allow you to define your own types.</p>
+</li>
+<li>
+<p>Class definitions may define methods for the type.</p>
+</li>
+<li>
+<p>A class may inherit, and possibly override, some functionality from
+    a superclass.</p>
+</li>
+<li>
+<p>Syntax:</p>
+</li>
+</ul>
+<pre><code>class variable(superclass_list):
+    body
+</code></pre>
+
+<ul>
+<li>
+<p>The name of the class is given by the variable in the definition.
+    The superclass list defines the superclasses of the new class
+    (very often the base type object is used). The body of the class
+    typically defines one or more methods.</p>
+</li>
+<li>
+<p>Instances of classes are created by calling the class name as if it
+    were a function.</p>
+</li>
+<li>
+<p>If defined, the special method called <code>__init__</code> is used to
+    initialise a newly created instance of a class.</p>
+</li>
+<li>
+<p>The first parameter to each method is the object upon which the
+    method was called. The convention is to use the variable called
+    self, however any variable name will do. Many object oriented
+    languages make this variable an implicit parameter called this.</p>
+</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code class="python">class Vector(object):
+    def __init__(self, x=0, y=0, z=0):
+        self.x = x
+        self.y = y
+        self.z = z
+
+    def magnitude(self):
+        return sqrt(self.x ** 2 + self.y ** 2 + self.z ** 2)
+
+    def normalise(self):
+        magnitude = self.magnitude()
+        if magnitude == 0:
+            # Somehow we have a degenerate vector.
+            return self
+        else:
+            return self / self.magnitude()
+
+    def angle(self, other):
+        dp = self.dot_product(other)
+        return acos(dp / self.magnitude() * other.magnitude())
+
+    def dot_product(self, other):
+        return self.x * other.x + self.y * other.y + self.z * other.z
+</code></pre>
+
+<h1 id="exceptions">Exceptions</h1>
+<ul>
+<li>
+<p>Exceptions allow Python programs to handle erroneous program
+    conditions.</p>
+</li>
+<li>
+<p>An exception is raised (or thrown) at the point of the error and
+    handled (or caught) at some other place in the program.</p>
+</li>
+<li>
+<p>Exception handlers have the syntax:</p>
+</li>
+</ul>
+<pre><code class="python">try:
+    statement_block
+except exception_type as variable:
+    statement_block
+...
+</code></pre>
+
+<ul>
+<li>
+<p>The statement block after <code>try</code> is executed. If no exceptions are
+    raised in that block the program continues immediately after the
+    exception handler. If an exception is raised in the block then
+    program control jumps to the innermost closing <code>except</code> clause.
+    Except clauses may optionally specify the set of exception types
+    that they can handle. If the raised exception is an instance of
+    the handled type then the body of the except clause is executed,
+    otherwise the next except clause (if any) is tried.</p>
+</li>
+<li>
+<p>If no matching exception handler is found then the program will
+    terminate with an unhandled exception error. Python will normally
+    print a stack trace at this point for error diagnosis.</p>
+</li>
+<li>
+<p>You may raise your own exceptions using the <code>raise</code> keyword.</p>
+</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code class="python"># alternative version of the histogram code from the section on
+# dictionaries
+for line in sys.stdin:
+    next_integer = int(line)
+    try:
+        histogram[next_integer] += 1
+    except KeyError:
+        histogram[next_integer] = 1
+</code></pre>
+
+<h2 id="modules">Modules</h2>
+<ul>
+<li>
+<p>A module is a file which contains Python code.</p>
+</li>
+<li>
+<p>Any Python file you create is automatically a module.</p>
+</li>
+<li>
+<p>It is considered good programming style to decompose complex
+    programs into multiple modules. Each module should collect
+    together code with similar purpose.</p>
+</li>
+<li>
+<p>Variables defined at the top level of a module (such as global
+    variables, functions and classes) can be imported into other
+    modules.</p>
+</li>
+<li>
+<p>Python comes with many standard modules.</p>
+</li>
+<li>
+<p>The <code>import</code> keyword is used to import an entire module.</p>
+</li>
+<li>
+<p>You may import a subset of things from a module using the <code>from ... import ...</code> syntax.</p>
+</li>
+<li>
+<p>You may import a module with a new name using the <code>from ... import ... as ...</code> or <code>import ... as ...</code></p>
+</li>
+<li>
+<p>When a module is first imported in a program, all of its top-level
+    statements are executed from top to bottom. Subsequent imports use
+    a cached version of its definitions, its statements are not
+    re-executed.</p>
+</li>
+<li>
+<p>A special module called <code>builtins</code> is imported into every other module
+    by default, and it is automatically imported at the interactive
+    prompt in the interpreter.</p>
+</li>
+</ul>
+<p><strong>Interactive Example:</strong></p>
+<pre><code class="python">&gt;&gt;&gt; import math
+&gt;&gt;&gt; math.sqrt(100)
+10.0
+&gt;&gt;&gt; sqrt(100)
+Traceback (most recent call last):
+File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+NameError: name 'sqrt' is not defined
+&gt;&gt;&gt; from math import sqrt
+&gt;&gt;&gt; sqrt(100)
+10.0
+&gt;&gt;&gt; import math as m
+&gt;&gt;&gt; m.sqrt(100)
+10.0
+</code></pre>
+
+<h1 id="packages">Packages</h1>
+<ul>
+<li>
+<p>A package is a collection of modules in a hierarchy.</p>
+</li>
+<li>
+<p>Packages are the common way to structure Python libraries.</p>
+</li>
+<li>
+<p>The <a href="https://pypi.python.org/pypi">Python Package Index (PyPI)</a> is a big collection of open
+    source packages contributed by the Python community (PyPI contains more than 64 thousand packages at the time of
+    writing).</p>
+</li>
+<li>
+<p>Package installation tools such as <a href="https://en.wikipedia.org/wiki/Pip_(package_manager)">pip</a>, make it easy to install
+    packages onto your computer.</p>
+</li>
+<li>
+<p>If you want to make your own Python code easy for others to install
+    and use then you should consider making it a package. You can even
+    upload it to PyPI.</p>
+</li>
+<li>
+<p>Many people use <a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/">virtualenv</a> to install packages into a local
+    "sandboxed" Python environment. This avoids conflicts with the
+    central Python package database on your computer, and allows
+    multiple different versions of packages to be used.</p>
+</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<!-- This is just a copy of the mkdocs-material footer.html with the Prev/Next page navigation removed.-->
+<footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            <a href="https://www.melbournebioinformatics.org.au/">Melbourne Bioinformatics</a>
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application-6b599127bc.js"></script>
+      <script>app.initialize({url:{base:"../../.."}})</script>
+      
+        <script src="../../../includes/media/delayed-jquery.js"></script>
+      
+        <script src="../../../includes/media/mdx_showable.js"></script>
+      
+    
+    
+      
+      <script>!function(e,t,a,n,o,c,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,c=t.createElement(a),i=t.getElementsByTagName(a)[0],c.async=1,c.src=n,i.parentNode.insertBefore(c,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-21794901-5","www.melbournebioinformatics.org.au/tutorials/"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var t=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",t,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+      
+    
+  </body>
+</html>
