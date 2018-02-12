@@ -19,9 +19,14 @@ copyright: <a href="https://www.melbournebioinformatics.org.au/">Melbourne Bioin
 pages:
 - 'Home': 'index.md'
 - 'Guides': 
-  - 'First guide': 'guides/guide_test.md'
-  - 'Second guide': 'guides/newguide.md'
-  - 'Third guide': 'guides/guide3.md'
+  - 'What is bioinformatics?': 'guides/bioinfo.md'
+  - 'RNA-seq': 'guides/RNA-seq.md'
+  - 'Variant calling': 'guides/variant-calling.md'
+  - 'Cancer genomics': 'guides/cancer-genomics.md'
+  - 'Microbial genomics': 'guides/microbial_genomics.md'
+  - 'What is Galaxy?': 'guides/galaxy.md'
+  - 'What is Nectar?': 'guides/nectar.md' 
+  - 'Computing at Melbourne Bioinformatics': 'guides/melbio-computing.md'
 - 'General Tutorials':
   - 'Python Overview': 'tutorials/python_overview/python_overview.md'
   - 'Using Git and Github for revision control': 'tutorials/using_git/Using_Git.md'
