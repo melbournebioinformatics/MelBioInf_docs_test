@@ -19,7 +19,9 @@ copyright: <a href="https://www.melbournebioinformatics.org.au/">Melbourne Bioin
 pages:
 - 'Home': 'index.md'
 - 'Guides': 
-  - 'Test guide page':'guides/guide_test.md'
+  - 'First guide': 'guides/guide_test.md'
+  - 'Second guide': 'guides/newguide.md'
+  - 'Third guide': 'guides/guide3.md'
 - 'General Tutorials':
   - 'Python Overview': 'tutorials/python_overview/python_overview.md'
   - 'Using Git and Github for revision control': 'tutorials/using_git/Using_Git.md'
