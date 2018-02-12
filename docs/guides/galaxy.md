@@ -11,6 +11,11 @@ Galaxy is a web platform for bioinformatics analysis.
 
 Introduction to Galaxy
 
+
+[tutorial link](../tutorials/galaxy_101/galaxy_101.md)
+
+
+
 Galaxy Workflows
 
 In addition, many of our tutorials use Galaxy. 
