@@ -21,12 +21,12 @@ pages:
 - 'Guides': 
   - 'What is bioinformatics?': 'guides/bioinfo.md'
   - 'The Galaxy platform': 'guides/galaxy.md'
-  - 'RNA-seq': 'guides/RNA-seq.md'
   - 'Genome assembly': 'guides/genome-assembly.md'
+  - 'RNA-seq': 'guides/RNA-seq.md'
   - 'Variant calling': 'guides/variant-calling.md'
   - 'Cancer genomics': 'guides/cancer-genomics.md'
   - 'Microbial genomics': 'guides/microbial_genomics.md'
-  - 'Using and storing data': 'guides/data.md'
+  - 'Computing': 'guides/computing.md'
   - 'Computing at Melbourne Bioinformatics': 'guides/melbio-computing.md'
   - 'More help': 'guides/more-help.md'
 - 'General Tutorials':
