@@ -1,28 +1,30 @@
+# What is bioinformatics?
 
 Bioinformatics is the analysis of biologial data using computational methods. It includes the study of genes and genomes, RNA, proteins and metabolites. 
 
+## Getting started
+
+- Look at our guides on the left for a general introduction to several key topics in bioinformatics. 
+
+- To analyse data, we recommend getting started with [Galaxy](galaxy.md) - a free, web-based bioinformatics platform. 
 
 ## Resources
 
+- Melbourne Bioinformatics tutorials: see the left hand panel for tutorials covering computing, genomics, RNA-seq, and proteomics. 
 
-- Australian Bioinformatics and Computational Biology Society: www.abacbs.org
+- Australian Bioinformatics and Computational Biology Society:
+[www.abacbs.org](www.abacbs.org)
 
-- Student group of ABACBS - COMBINE: www.combine.org.au 
-- Winter School in Mathematical and Computational Biology: www.bioinformatics.org.au
-- BioInfo Summer: www.bis.amsi.org.au
-- Software Carpentry: www.software-carpentry.org
+- Student group of ABACBS - COMBINE: [www.combine.org.au](  www.combine.org.au)
 
+- Winter School in Mathematical and Computational Biology: 
+[www.bioinformatics.org.au](www.bioinformatics.org.au)
 
+- BioInfo Summer: [www.bis.amsi.org.au](www.bis.amsi.org.au)
 
-## Getting started
+- Software Carpentry: [www.software-carpentry.org](www.software-carpentry.org)
 
-Look at our guides for a general introduction to several key bioinformatics topics. 
+- Bioinformatics problem solving challenges: [www.rosalind.info](www.rosalind.info) 
 
-* If you are new to the field, we recommend getting started with the Galaxy Platform - a free web-based platform to analayse data. [link to guide]
-
-
-* Try out bioinformatics problem solving at Rosalind www.rosalind.info 
-
-
-
+- A selelection of key journal papers published last year in [BMC Bioinformatics](http://blogs.biomedcentral.com/bmcseriesblog/2018/01/24/a-year-in-bioinformatics/).
 
