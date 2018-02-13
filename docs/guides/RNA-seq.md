@@ -1,3 +1,8 @@
+# RNA-seq
+
+
+
+
 How can I analyse my RNA-seq data to investigate differential gene expression? 
 
 
@@ -13,6 +18,10 @@ RNA-Seq DGE: Advanced
 RNA-Seq DGE: Experimental Design
 RNA-Seq DGE: in Galaxy (Microbial)
 RNA-Seq DGE: command line (Microbial)
+
+
+
+
 
 
 
