@@ -1,10 +1,11 @@
+# The Galaxy Platform  
 
-# The Galaxy Platform
+<!-- ![Galaxy logo](media/galaxy_logo.png) -->
+
 
 Galaxy is a web platform for bioinformatics analysis. 
 
-
-## Which Galaxy should I use?
+## Which Galaxy should I use? 
 
 - There are many different Galaxy servers - each one has a different web address.
     
@@ -37,6 +38,10 @@ To get started, go to [https://usegalaxy.org/](https://usegalaxy.org/), log in, 
 
 * [Introduction to Galaxy](http://galaxyproject.github.io/training-material/topics/introduction/tutorials/galaxy-intro-101/tutorial.html)
 * [Galaxy histories](http://galaxyproject.github.io/training-material/topics/introduction/tutorials/galaxy-intro-history/tutorial.html)
+
+[![GTN logo](media/GTN_logo.png)](https://galaxyproject.org/teach/gtn/)
+
+
 
 
 
