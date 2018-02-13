@@ -20,13 +20,15 @@ pages:
 - 'Home': 'index.md'
 - 'Guides': 
   - 'What is bioinformatics?': 'guides/bioinfo.md'
+  - 'The Galaxy platform': 'guides/galaxy.md'
   - 'RNA-seq': 'guides/RNA-seq.md'
+  - 'Genome assembly': 'guides/genome-assembly.md'
   - 'Variant calling': 'guides/variant-calling.md'
   - 'Cancer genomics': 'guides/cancer-genomics.md'
   - 'Microbial genomics': 'guides/microbial_genomics.md'
-  - 'What is Galaxy?': 'guides/galaxy.md'
-  - 'What is Nectar?': 'guides/nectar.md' 
+  - 'Using and storing data': 'guides/data.md'
   - 'Computing at Melbourne Bioinformatics': 'guides/melbio-computing.md'
+  - 'More help': 'guides/more-help.md'
 - 'General Tutorials':
   - 'Python Overview': 'tutorials/python_overview/python_overview.md'
   - 'Using Git and Github for revision control': 'tutorials/using_git/Using_Git.md'
