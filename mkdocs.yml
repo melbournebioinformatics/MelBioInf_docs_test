@@ -26,7 +26,8 @@ pages:
   - 'Variant calling': 'guides/variant-calling.md'
   - 'Cancer genomics': 'guides/cancer-genomics.md'
   - 'Microbial genomics': 'guides/microbial_genomics.md'
-  - 'Computing': 'guides/computing.md'
+  - 'Data storage': 'guides/data-storage.md'
+  - 'Data analysis': 'guides/data-analysis.md'
   - 'Computing at Melbourne Bioinformatics': 'guides/melbio-computing.md'
   - 'More help': 'guides/more-help.md'
 - 'General Tutorials':
