@@ -22,11 +22,15 @@ Galaxy is a web platform for bioinformatics analysis.
 
 <!-- to do: check these run on Galaxy-Mel (or Galaxy-Au) - especially the GTN ones -->
 
-* [Introduction to Galaxy](../../tutorials/galaxy_101/galaxy_101.md) 
+* Galaxy-Mel: [Introduction to Galaxy](../tutorials/galaxy_101/galaxy_101.md) 
 
-* [Galaxy Workflows](../tutorials/galaxy-worklows/galaxy-workflows) 
-* [Introduction to Galaxy](http://galaxyproject.github.io/training-material/topics/introduction/tutorials/galaxy-intro-101/tutorial.html)
-* [Galaxy histories](http://galaxyproject.github.io/training-material/topics/introduction/tutorials/galaxy-intro-history/tutorial.html)
+
+[tutorial link](../tutorials/galaxy_101/galaxy_101.md)
+
+
+* Galaxy-Mel: [Galaxy Workflows](../tutorials/galaxy-worklows/galaxy-workflows) 
+* useGalaxy.org: [Introduction to Galaxy](http://galaxyproject.github.io/training-material/topics/introduction/tutorials/galaxy-intro-101/tutorial.html)
+* useGalaxy.org: [Galaxy histories](http://galaxyproject.github.io/training-material/topics/introduction/tutorials/galaxy-intro-history/tutorial.html)
 
 
 The Galaxy Training Network hosts a large collection of useful training material [here](http://galaxyproject.github.io/training-material/).
