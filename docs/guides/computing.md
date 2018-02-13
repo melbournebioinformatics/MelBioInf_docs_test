@@ -1,27 +1,10 @@
 
-Bioinformatics Computing
+# Bioinformatics Computing
 
 
-Useful resources:
-
-- Intro to Unix
-- Python
-- Intro to HPC
-- Git
-- Containers
-- what is the GVL
-- launch your own gvl
-
-
-
-
-
-Using and storing data
-
+## Where should I store my data? 
 
 Large datasets are difficult to store and share on your local computer. A good option is to store data in the cloud. 
-
-
 
 
 Options:
@@ -32,7 +15,6 @@ Options:
 
 - store on the nectar cloud (how to - swift storage?)
   - eg. your own galaxy(gvl) on the nectar cloud
-
 
 
 
@@ -51,8 +33,13 @@ http://training.nectar.org.au/
 
 
 
-genomespace links between storage and platforms. 
+https://nectar.org.au/about/
 
+Nectar is an Australian organization that provides a cloud for data storage. 
+
+You can run your own Galaxy server on the Nectar cloud. 
+
+genomespace links between storage and platforms. 
 
 
 
@@ -63,14 +50,44 @@ Tutorials:
 
 
 
+## How can I analyse my data?
+
+ - Galaxy
+    - cloud
+    - install your own
+
+ - command line
+
+Useful resources:
+
+- Intro to Unix
+- Python
+- Intro to HPC
+- Git
+- Containers
+- what is the GVL
+- Difference between the GVL and Galaxy
+- launch your own gvl
 
 
 
 
 
 
-https://nectar.org.au/about/
 
-Nectar is an Australian organization that provides a cloud for data storage. 
 
-You can run your own Galaxy server on the Nectar cloud. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
