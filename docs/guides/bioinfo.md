@@ -2,8 +2,6 @@
 
 Bioinformatics is the analysis of biologial data using computational methods. It includes the study of genes and genomes, RNA, proteins and metabolites. 
 
-edit
-
 ## Getting started
 
 - Look at our guides on the left for a general introduction to several key topics in bioinformatics. 
