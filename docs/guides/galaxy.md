@@ -21,14 +21,11 @@ Galaxy is a web platform for bioinformatics analysis.
 
 ## Tutorials
 
-<!-- to do: check these run on Galaxy-Mel (or Galaxy-Au) - especially the GTN ones -->
-
 Go to Galaxy-Mel and log in, then try these tutorials:
 
 * [Introduction to Galaxy](../tutorials/galaxy_101/galaxy_101.md) 
 * [Galaxy Workflows](../tutorials/galaxy-worklows/galaxy-workflows) 
 * Other MB tutorials, e.g. Assembly, RNA-seq, etc. 
-
 
 ## Galaxy Training Network
 
@@ -40,6 +37,28 @@ To get started, go to [https://usegalaxy.org/](https://usegalaxy.org/), log in, 
 * [Galaxy histories](http://galaxyproject.github.io/training-material/topics/introduction/tutorials/galaxy-intro-history/tutorial.html)
 
 [![GTN logo](media/GTN_logo.png)](https://galaxyproject.org/teach/gtn/)
+
+
+## Running your own Galaxy server in the cloud
+
+It is possible to run your own Galaxy instance using the Nectar cloud. 
+
+- [Tutorial to launch your own Galaxy](../tutorials/gvl_launch/gvl_launch.md)
+
+- [Nectar: https://nectar.org.au](https://nectar.org.au/about/)
+
+## Running Galaxy locally using Docker
+
+It is usually preferable to use a docker Galaxy image rather than installing Galaxy itself locally, for tool depencies. 
+
+- The docker container is at [https://hub.docker.com/r/bgruening/galaxy-stable/](https://hub.docker.com/r/bgruening/galaxy-stable/)
+
+- [Docker tutorial link](../tutorials/docker/docker.md)
+
+- Run with `docker run -p 80:80 bgruening/galaxy-stable`
+
+
+
 
 
 

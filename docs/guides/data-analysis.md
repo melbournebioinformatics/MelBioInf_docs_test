@@ -15,6 +15,16 @@ Install and run tools locally. We recommend these tutorials to get started:
 - [Git](../tutorials/using_git/Using_Git.md)
 - [Docker](../tutorials/docker/docker.md)
 
+## Launch a Linux machine in the cloud
+
+Use a virtual machine. 
+
+For example, you could use the Genomics Virtual Lab (the GVL) in the Nectar cloud. 
+
+- [Tutorial to launch your own Galaxy](../tutorials/gvl_launch/gvl_launch.md)
+- [Nectar: https://nectar.org.au](https://nectar.org.au/about/)
+
+
 ## A high performance computer (cluster)
 
 Check this section with Andrew Isaac
@@ -38,8 +48,4 @@ systems
 https://www.melbournebioinformatics.org.au/capabilities/access-to-high-end-systems/
 
 
-
-- what is the GVL
-- Difference between the GVL and Galaxy
-- launch your own gvl
 
