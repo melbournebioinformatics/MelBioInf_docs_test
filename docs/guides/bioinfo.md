@@ -6,6 +6,8 @@ Bioinformatics is the analysis of biologial data using computational methods. It
 
 - Look at our guides on the left for a general introduction to several key topics in bioinformatics. 
 
+- Underneath the guides, there are groups of tutorials for common tasks in bioinformatics. 
+
 - To analyse data, we recommend getting started with [Galaxy](galaxy.md) - a free, web-based bioinformatics platform. 
 
 ## Resources
