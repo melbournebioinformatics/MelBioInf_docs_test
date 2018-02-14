@@ -11,14 +11,134 @@
             "title": "Tutorials and protocols"
         }, 
         {
-            "location": "/guide_test/", 
-            "text": "Example guide file\n\n\nTopic\n\n\nPapers\n\n\nTutorials\n\n\n\n\n'RNA seq basic': 'tutorials/rna_seq_dge_basic/rna_seq_basic_tutorial.md'", 
-            "title": "Guides"
+            "location": "/guides/bioinfo/", 
+            "text": "What is bioinformatics?\n\n\nBioinformatics is the analysis of biologial data using computational methods. It includes the study of genes and genomes, RNA, proteins and metabolites. \n\n\nGetting started\n\n\n\n\n\n\nLook at our guides on the left for a general introduction to several key topics in bioinformatics. \n\n\n\n\n\n\nUnderneath the guides, there are groups of tutorials for common tasks in bioinformatics. \n\n\n\n\n\n\nTo analyse data, we recommend getting started with \nGalaxy\n - a free, web-based bioinformatics platform. \n\n\n\n\n\n\nResources\n\n\n\n\n\n\nMelbourne Bioinformatics tutorials: see the left hand panel for tutorials covering computing, genomics, RNA-seq, and proteomics. \n\n\n\n\n\n\nAustralian Bioinformatics and Computational Biology Society:\n\nwww.abacbs.org\n\n\n\n\n\n\nStudent group of ABACBS - COMBINE: \nwww.combine.org.au\n\n\n\n\n\n\nWinter School in Mathematical and Computational Biology: \n\nwww.bioinformatics.org.au\n\n\n\n\n\n\nBioInfo Summer: \nwww.bis.amsi.org.au\n\n\n\n\n\n\nSoftware Carpentry: \nwww.software-carpentry.org\n\n\n\n\n\n\nBioinformatics problem solving challenges: \nwww.rosalind.info\n \n\n\n\n\n\n\nA selelection of key journal papers published last year in \nBMC Bioinformatics\n.", 
+            "title": "What is bioinformatics?"
         }, 
         {
-            "location": "/guide_test/#example-guide-file", 
-            "text": "Topic  Papers  Tutorials   'RNA seq basic': 'tutorials/rna_seq_dge_basic/rna_seq_basic_tutorial.md'", 
-            "title": "Example guide file"
+            "location": "/guides/bioinfo/#what-is-bioinformatics", 
+            "text": "Bioinformatics is the analysis of biologial data using computational methods. It includes the study of genes and genomes, RNA, proteins and metabolites.", 
+            "title": "What is bioinformatics?"
+        }, 
+        {
+            "location": "/guides/bioinfo/#getting-started", 
+            "text": "Look at our guides on the left for a general introduction to several key topics in bioinformatics.     Underneath the guides, there are groups of tutorials for common tasks in bioinformatics.     To analyse data, we recommend getting started with  Galaxy  - a free, web-based bioinformatics platform.", 
+            "title": "Getting started"
+        }, 
+        {
+            "location": "/guides/bioinfo/#resources", 
+            "text": "Melbourne Bioinformatics tutorials: see the left hand panel for tutorials covering computing, genomics, RNA-seq, and proteomics.     Australian Bioinformatics and Computational Biology Society: www.abacbs.org    Student group of ABACBS - COMBINE:  www.combine.org.au    Winter School in Mathematical and Computational Biology:  www.bioinformatics.org.au    BioInfo Summer:  www.bis.amsi.org.au    Software Carpentry:  www.software-carpentry.org    Bioinformatics problem solving challenges:  www.rosalind.info      A selelection of key journal papers published last year in  BMC Bioinformatics .", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/guides/galaxy/", 
+            "text": "The Galaxy Platform\n\n\n\n\n\nGalaxy is a web platform for bioinformatics analysis. \n\n\nWhich Galaxy should I use?\n\n\n\n\n\n\nThere are many different Galaxy servers - each one has a different web address.\n\n\n\n\n\n\nFor researchers based in Melbourne, Australia, we recommend you use \nGalaxy-Mel\n.\n\n\n\n\n\n\nThe main worldwide Galaxy server is \nhttps://usegalaxy.org/\n\n\n\n\n\n\nOther Galaxy servers are listed \nhere\n.\n\n\n\n\n\n\nCheck the policy for the server you are using so that you know how long your data will be kept. \n\n\n\n\n\n\nIf you use more than one Galaxy server (e.g. Galaxy-Mel and useGalaxy.org) you need to register and log in separately for each server. They don't talk to each other. \n\n\n\n\n\n\nTutorials\n\n\n\n\n\nGo to Galaxy-Mel and log in, then try these tutorials:\n\n\n\n\nIntroduction to Galaxy\n \n\n\nGalaxy Workflows\n \n\n\nOther MB tutorials, e.g. Assembly, RNA-seq, etc. \n\n\n\n\nGalaxy Training Network\n\n\nThe Galaxy Training Network hosts a large collection of useful training material \nhere\n.\n\n\nTo get started, go to \nhttps://usegalaxy.org/\n, log in, then try these tutorials: \n\n\n\n\nIntroduction to Galaxy\n\n\nGalaxy histories", 
+            "title": "The Galaxy platform"
+        }, 
+        {
+            "location": "/guides/galaxy/#the-galaxy-platform", 
+            "text": "Galaxy is a web platform for bioinformatics analysis.", 
+            "title": "The Galaxy Platform"
+        }, 
+        {
+            "location": "/guides/galaxy/#which-galaxy-should-i-use", 
+            "text": "There are many different Galaxy servers - each one has a different web address.    For researchers based in Melbourne, Australia, we recommend you use  Galaxy-Mel .    The main worldwide Galaxy server is  https://usegalaxy.org/    Other Galaxy servers are listed  here .    Check the policy for the server you are using so that you know how long your data will be kept.     If you use more than one Galaxy server (e.g. Galaxy-Mel and useGalaxy.org) you need to register and log in separately for each server. They don't talk to each other.", 
+            "title": "Which Galaxy should I use?"
+        }, 
+        {
+            "location": "/guides/galaxy/#tutorials", 
+            "text": "Go to Galaxy-Mel and log in, then try these tutorials:   Introduction to Galaxy    Galaxy Workflows    Other MB tutorials, e.g. Assembly, RNA-seq, etc.", 
+            "title": "Tutorials"
+        }, 
+        {
+            "location": "/guides/galaxy/#galaxy-training-network", 
+            "text": "The Galaxy Training Network hosts a large collection of useful training material  here .  To get started, go to  https://usegalaxy.org/ , log in, then try these tutorials:    Introduction to Galaxy  Galaxy histories", 
+            "title": "Galaxy Training Network"
+        }, 
+        {
+            "location": "/guides/genome-assembly/", 
+            "text": "Genome assembly\n\n\nMicrobial\n\n\nEukaryote\n\n\nTutorials", 
+            "title": "Genome assembly"
+        }, 
+        {
+            "location": "/guides/RNA-seq/", 
+            "text": "RNA-seq\n\n\nHow can I analyse my RNA-seq data to investigate differential gene expression? \n\n\nRNA-seq is often used to examine the genes expressed under two experimental conditions. If a gene is important for tolerating a particular condition, that gene may be highly expressed. Thus, there will be more copies of the gene's RNA transcript in that condition. \n\n\nTutorials\n\n\nIntro to Galaxy\nRNA-Seq DGE: Basic (Human)\nRNA-Seq DGE: Advanced \nRNA-Seq DGE: Experimental Design\nRNA-Seq DGE: in Galaxy (Microbial)\nRNA-Seq DGE: command line (Microbial)\n\n\nUseful links (but keep brief? and very up to date)\n\n\njournal article\nother training\na protocol\n\n\nHelp\n\n\nAttend a MB training course (link to \"how to attend\") \nLink with expertise group at MB (link how to)", 
+            "title": "RNA-seq"
+        }, 
+        {
+            "location": "/guides/RNA-seq/#rna-seq", 
+            "text": "How can I analyse my RNA-seq data to investigate differential gene expression?   RNA-seq is often used to examine the genes expressed under two experimental conditions. If a gene is important for tolerating a particular condition, that gene may be highly expressed. Thus, there will be more copies of the gene's RNA transcript in that condition.   Tutorials  Intro to Galaxy\nRNA-Seq DGE: Basic (Human)\nRNA-Seq DGE: Advanced \nRNA-Seq DGE: Experimental Design\nRNA-Seq DGE: in Galaxy (Microbial)\nRNA-Seq DGE: command line (Microbial)  Useful links (but keep brief? and very up to date)  journal article\nother training\na protocol  Help  Attend a MB training course (link to \"how to attend\") \nLink with expertise group at MB (link how to)", 
+            "title": "RNA-seq"
+        }, 
+        {
+            "location": "/guides/variant-calling/", 
+            "text": "", 
+            "title": "Variant calling"
+        }, 
+        {
+            "location": "/guides/cancer-genomics/", 
+            "text": "Cancer Genomics\n\n\nTutorials\n\n\n\n\nvariant calling?\n\n\nRNA-seq?\n\n\n\n\nis there a more specific cancer genomcis link? \nhttps://www.melbournebioinformatics.org.au/project/human-genomics/", 
+            "title": "Cancer genomics"
+        }, 
+        {
+            "location": "/guides/microbial_genomics/", 
+            "text": "Sepsis tutorials:\n\n\nAssembly\n\n\nAnnotation\n\n\nVariant Calling\n\n\nhttps://www.melbournebioinformatics.org.au/project/microbial-genomics/", 
+            "title": "Microbial genomics"
+        }, 
+        {
+            "location": "/guides/data-storage/", 
+            "text": "Where should I store my data?\n\n\nLarge datasets are difficult to store on your local computer and share with colleagues. A good option is to store data in the cloud. \n\n\nData storage options\n\n\n\n\n\n\nLocally on your computer\n\n\n\n\n\n\nYour departmental server, but check storage limits and policy \n\n\n\n\n\n\nOn a Galaxy server, but check storage limits and policies - link to galaxy guide\n\n\n\n\n\n\nOn the Nectar cloud. \n\n\n\n\nNectar is an Australian organization that provides a cloud for data storage. \n\n\nhttps://nectar.org.au/about/\n\n\ngeneral nectar storage link\nhttps://support.ehelp.edu.au/support/solutions/6000134520\n\n\nnectar cloud storage link\nhttps://support.ehelp.edu.au/support/solutions/articles/6000055382-introduction-to-cloud-storage\n\n\n\n\n\n\n\n\nGenomeSpace links between storage and platforms (current?) - tutorial link", 
+            "title": "Data storage"
+        }, 
+        {
+            "location": "/guides/data-storage/#where-should-i-store-my-data", 
+            "text": "Large datasets are difficult to store on your local computer and share with colleagues. A good option is to store data in the cloud.", 
+            "title": "Where should I store my data?"
+        }, 
+        {
+            "location": "/guides/data-storage/#data-storage-options", 
+            "text": "Locally on your computer    Your departmental server, but check storage limits and policy     On a Galaxy server, but check storage limits and policies - link to galaxy guide    On the Nectar cloud.    Nectar is an Australian organization that provides a cloud for data storage.   https://nectar.org.au/about/  general nectar storage link\nhttps://support.ehelp.edu.au/support/solutions/6000134520  nectar cloud storage link\nhttps://support.ehelp.edu.au/support/solutions/articles/6000055382-introduction-to-cloud-storage     GenomeSpace links between storage and platforms (current?) - tutorial link", 
+            "title": "Data storage options"
+        }, 
+        {
+            "location": "/guides/data-analysis/", 
+            "text": "How can I analyse my data?\n\n\nThe Galaxy Platform\n\n\nTo analyse data, we recommend getting started with Galaxy - a free, web-based bioinformatics platform. See our full guide \nhere\n.\n\n\nYour local computer\n\n\nInstall and run tools locally. We recommend these tutorials to get started: \n\n\n\n\nUnix\n\n\nPython\n\n\nGit\n\n\nDocker\n\n\n\n\nA high performance computer (cluster)\n\n\nCheck this section with Andrew Isaac\n\n\nMelbourne Bioinformatics runs large clusters on which (unimelb only?) researchers can run analyses. \n\n\nFor detailed information see the documentation \nhere\n. \n\n\n\n\n\n\nTo apply for usage, click \nhere\n\n\n\n\n\n\nFor information about logging on, click \nhere\n.\n\n\n\n\n\n\nFor information about running jobs, click \nhere\n. \n\n\n\n\n\n\nAvailable systems are listed [here[]]\n\n\n\n\n\n\nsystems \nhttps://www.melbournebioinformatics.org.au/capabilities/access-to-high-end-systems/\n\n\n\n\nwhat is the GVL\n\n\nDifference between the GVL and Galaxy\n\n\nlaunch your own gvl", 
+            "title": "Data analysis"
+        }, 
+        {
+            "location": "/guides/data-analysis/#how-can-i-analyse-my-data", 
+            "text": "", 
+            "title": "How can I analyse my data?"
+        }, 
+        {
+            "location": "/guides/data-analysis/#the-galaxy-platform", 
+            "text": "To analyse data, we recommend getting started with Galaxy - a free, web-based bioinformatics platform. See our full guide  here .", 
+            "title": "The Galaxy Platform"
+        }, 
+        {
+            "location": "/guides/data-analysis/#your-local-computer", 
+            "text": "Install and run tools locally. We recommend these tutorials to get started:    Unix  Python  Git  Docker", 
+            "title": "Your local computer"
+        }, 
+        {
+            "location": "/guides/data-analysis/#a-high-performance-computer-cluster", 
+            "text": "Check this section with Andrew Isaac  Melbourne Bioinformatics runs large clusters on which (unimelb only?) researchers can run analyses.   For detailed information see the documentation  here .     To apply for usage, click  here    For information about logging on, click  here .    For information about running jobs, click  here .     Available systems are listed [here[]]    systems \nhttps://www.melbournebioinformatics.org.au/capabilities/access-to-high-end-systems/   what is the GVL  Difference between the GVL and Galaxy  launch your own gvl", 
+            "title": "A high performance computer (cluster)"
+        }, 
+        {
+            "location": "/guides/more-help/", 
+            "text": "More help\n\n\nWeb resources\n\n\n\n\nSeqAnswers\n\n\nBioStars\n\n\n\n\nMelbourne Bioinformatics\n\n\n\n\nTutorials - online\n\n\nWorkshops - link\n\n\nsubscriptions - https://www.melbournebioinformatics.org.au/capabilities/subscriptions/", 
+            "title": "More help"
+        }, 
+        {
+            "location": "/guides/more-help/#web-resources", 
+            "text": "SeqAnswers  BioStars", 
+            "title": "Web resources"
+        }, 
+        {
+            "location": "/guides/more-help/#melbourne-bioinformatics", 
+            "text": "Tutorials - online  Workshops - link  subscriptions - https://www.melbournebioinformatics.org.au/capabilities/subscriptions/", 
+            "title": "Melbourne Bioinformatics"
         }, 
         {
             "location": "/tutorials/python_overview/python_overview/", 
