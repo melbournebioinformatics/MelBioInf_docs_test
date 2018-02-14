@@ -49,15 +49,26 @@ It is possible to run your own Galaxy instance using the Nectar cloud.
 
 ## Running Galaxy locally using Docker
 
-It is usually preferable to use a docker Galaxy image rather than installing Galaxy itself locally, for tool depencies. 
+It is usually preferable to use a docker Galaxy image rather than installing Galaxy itself locally, to limit issues with tool dependencies. 
 
-- The docker container is at [https://hub.docker.com/r/bgruening/galaxy-stable/](https://hub.docker.com/r/bgruening/galaxy-stable/)
+- You would need to have Docker installed: see the [Docker page](https://www.docker.com/).
 
-- [Docker tutorial link](../tutorials/docker/docker.md)
+- Try the [Docker tutorial](../tutorials/docker/docker.md).
 
-- Run with `docker run -p 80:80 bgruening/galaxy-stable`
-- In a web browser, enter "localhost" in the address bar
-- Your Galaxy should now be running. 
+- The docker container for Galaxy is at [https://hub.docker.com/r/bgruening/galaxy-stable/](https://hub.docker.com/r/bgruening/galaxy-stable/)
+
+- To run:
+    - Open a terminal window. 
+    - Type `docker run -p 80:80 bgruening/galaxy-stable`
+    - In a web browser, enter "localhost" in the address bar.
+    - Your Galaxy should now be running. 
+
+- To close the container:
+    - Open a new terminal window.
+    - Type `docker ps` to show running containers.
+    - Find the container ID.
+    - Type `docker stop <CONTAINER ID>`
+
 
 
 
