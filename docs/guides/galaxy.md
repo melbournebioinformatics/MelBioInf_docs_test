@@ -56,6 +56,11 @@ It is usually preferable to use a docker Galaxy image rather than installing Gal
 - [Docker tutorial link](../tutorials/docker/docker.md)
 
 - Run with `docker run -p 80:80 bgruening/galaxy-stable`
+- In a web browser, enter "localhost" in the address bar
+- Your Galaxy should now be running. 
+
+
+
 
 
 
