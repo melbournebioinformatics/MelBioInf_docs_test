@@ -30,6 +30,7 @@ pages:
   - 'Data analysis': 'guides/data-analysis.md'
   - 'More help': 'guides/more-help.md'
 - 'General Tutorials':
+  - 'The commandline: getting started': 'tutorials/cmdline/cmdline.md'
   - 'Python Overview': 'tutorials/python_overview/python_overview.md'
   - 'Using Git and Github for revision control': 'tutorials/using_git/Using_Git.md'
   - 'Introduction to HPC': 'tutorials/hpc/index.md'
