@@ -20,6 +20,7 @@ pages:
 - 'Home': 'index.md'
 - 'Guides': 
   - 'What is bioinformatics?': 'guides/bioinfo.md'
+  - 'Computing': 'guides/computing.md'
   - 'The Galaxy platform': 'guides/galaxy.md'
   - 'Genome assembly': 'guides/genome-assembly.md'
   - 'RNA-seq': 'guides/RNA-seq.md'
