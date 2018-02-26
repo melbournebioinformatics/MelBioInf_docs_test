@@ -7,7 +7,7 @@ There are several options for data analysis and data storage.
 
 Install and run tools locally. 
 
-Melbourne Bioinformatics has written tutorials for a few key tools, and we also run workshops throughout the year. For additional workshops, see Research Platforms [link].
+Melbourne Bioinformatics has written tutorials for a few key tools, and we also run workshops throughout the year. For additional workshops, see [Research Platforms](http://research.unimelb.edu.au/infrastructure/research-platform-services#training).
 
 We recommend these tutorials to get started: 
 
@@ -28,19 +28,15 @@ Use a virtual machine.
 
 For example, you could use the Genomics Virtual Lab (the GVL) in the Nectar cloud. 
 
-- [Tutorial to launch your own Galaxy](../tutorials/gvl_launch/gvl_launch.md)
+- [Tutorial: launch your own Galaxy](../tutorials/gvl_launch/gvl_launch.md)
 - [Nectar: https://nectar.org.au](https://nectar.org.au/about/)
 
 
 ## A high performance computer (cluster)
 
-Check this section with Andrew Isaac
-
-
-Melbourne Bioinformatics runs large clusters on which (unimelb only?) researchers can run analyses. 
+Melbourne Bioinformatics runs large clusters on which researchers can run analyses. 
 
 For detailed information see the documentation [here](https://www.melbournebioinformatics.org.au/documentation/). 
-
 
 - To apply for usage, click [here](https://www.melbournebioinformatics.org.au/documentation/help/faq/)
 
@@ -49,10 +45,6 @@ For detailed information see the documentation [here](https://www.melbournebioin
 
 - For information about running jobs, click [here](https://www.melbournebioinformatics.org.au/documentation/running_jobs/scheduling/). 
 
-- Available systems are listed [here[]]
-
-systems 
-https://www.melbournebioinformatics.org.au/capabilities/access-to-high-end-systems/
 
 ## Data storage
 

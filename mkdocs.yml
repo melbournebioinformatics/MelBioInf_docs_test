@@ -27,8 +27,6 @@ pages:
   - 'Variant calling': 'guides/variant-calling.md'
   - 'Cancer genomics': 'guides/cancer-genomics.md'
   - 'Microbial genomics': 'guides/microbial_genomics.md'
-  - 'Data storage': 'guides/data-storage.md'
-  - 'Data analysis': 'guides/data-analysis.md'
   - 'More help': 'guides/more-help.md'
 - 'General Tutorials':
   - 'Python Overview': 'tutorials/python_overview/python_overview.md'
