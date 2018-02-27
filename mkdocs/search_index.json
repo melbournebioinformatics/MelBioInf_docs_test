@@ -31,8 +31,43 @@
             "title": "Resources"
         }, 
         {
+            "location": "/guides/computing/", 
+            "text": "Computing platforms and infrastructure\n\n\nThere are several options for data analysis and data storage. \n\n\nYour local computer\n\n\nInstall and run tools locally. \n\n\nMelbourne Bioinformatics has written tutorials for a few key tools, and we also run workshops throughout the year. For additional workshops, see \nResearch Platforms\n.\n\n\nWe recommend these tutorials to get started: \n\n\n\n\nUnix\n\n\nPython\n\n\nGit\n\n\nDocker\n\n\n\n\nThe Galaxy Platform\n\n\nGalaxy is a free, web-based bioinformatics platform. See our full guide \nhere\n. \n\n\nLaunch a Linux machine in the cloud\n\n\nUse a virtual machine. \n\n\nFor example, you could use the Genomics Virtual Lab (the GVL) in the Nectar cloud. \n\n\n\n\nTutorial: launch your own Galaxy\n\n\nNectar: https://nectar.org.au\n\n\n\n\nA high performance computer (cluster)\n\n\nMelbourne Bioinformatics runs large clusters on which researchers can run analyses. \n\n\nFor detailed information see the documentation \nhere\n. \n\n\n\n\n\n\nTo apply for usage, click \nhere\n\n\n\n\n\n\nFor information about logging on, click \nhere\n.\n\n\n\n\n\n\nFor information about running jobs, click \nhere\n. \n\n\n\n\n\n\nData storage\n\n\nLarge datasets may be difficult to store (and share) on your local computer. \n\n\nAn alternative option is using storage on the Nectar cloud. \n\n\n\n\nNectar is an Australian organization that provides a cloud for data storage and analysis. \n\n\nNectar link: \nnectar.org.au\n\n\nClick \nhere\n for information about storage options and tools on Nectar. \n\n\nClick \nhere\n for an introduction to cloud storage on Nectar.", 
+            "title": "Computing"
+        }, 
+        {
+            "location": "/guides/computing/#computing-platforms-and-infrastructure", 
+            "text": "There are several options for data analysis and data storage.", 
+            "title": "Computing platforms and infrastructure"
+        }, 
+        {
+            "location": "/guides/computing/#your-local-computer", 
+            "text": "Install and run tools locally.   Melbourne Bioinformatics has written tutorials for a few key tools, and we also run workshops throughout the year. For additional workshops, see  Research Platforms .  We recommend these tutorials to get started:    Unix  Python  Git  Docker", 
+            "title": "Your local computer"
+        }, 
+        {
+            "location": "/guides/computing/#the-galaxy-platform", 
+            "text": "Galaxy is a free, web-based bioinformatics platform. See our full guide  here .", 
+            "title": "The Galaxy Platform"
+        }, 
+        {
+            "location": "/guides/computing/#launch-a-linux-machine-in-the-cloud", 
+            "text": "Use a virtual machine.   For example, you could use the Genomics Virtual Lab (the GVL) in the Nectar cloud.    Tutorial: launch your own Galaxy  Nectar: https://nectar.org.au", 
+            "title": "Launch a Linux machine in the cloud"
+        }, 
+        {
+            "location": "/guides/computing/#a-high-performance-computer-cluster", 
+            "text": "Melbourne Bioinformatics runs large clusters on which researchers can run analyses.   For detailed information see the documentation  here .     To apply for usage, click  here    For information about logging on, click  here .    For information about running jobs, click  here .", 
+            "title": "A high performance computer (cluster)"
+        }, 
+        {
+            "location": "/guides/computing/#data-storage", 
+            "text": "Large datasets may be difficult to store (and share) on your local computer.   An alternative option is using storage on the Nectar cloud.    Nectar is an Australian organization that provides a cloud for data storage and analysis.   Nectar link:  nectar.org.au  Click  here  for information about storage options and tools on Nectar.   Click  here  for an introduction to cloud storage on Nectar.", 
+            "title": "Data storage"
+        }, 
+        {
             "location": "/guides/galaxy/", 
-            "text": "The Galaxy Platform\n\n\n\n\n\nGalaxy is a web platform for bioinformatics analysis. \n\n\nWhich Galaxy should I use?\n\n\n\n\n\n\nThere are many different Galaxy servers - each one has a different web address.\n\n\n\n\n\n\nFor researchers based in Melbourne, Australia, we recommend you use \nGalaxy-Mel\n.\n\n\n\n\n\n\nThe main worldwide Galaxy server is \nhttps://usegalaxy.org/\n\n\n\n\n\n\nOther Galaxy servers are listed \nhere\n.\n\n\n\n\n\n\nCheck the policy for the server you are using so that you know how long your data will be kept. \n\n\n\n\n\n\nIf you use more than one Galaxy server (e.g. Galaxy-Mel and useGalaxy.org) you need to register and log in separately for each server. They don't talk to each other. \n\n\n\n\n\n\nTutorials\n\n\nGo to Galaxy-Mel and log in, then try these tutorials:\n\n\n\n\nIntroduction to Galaxy\n \n\n\nGalaxy Workflows\n \n\n\nOther MB tutorials, e.g. Assembly, RNA-seq, etc. \n\n\n\n\nGalaxy Training Network\n\n\nThe Galaxy Training Network hosts a large collection of useful training material \nhere\n.\n\n\nTo get started, go to \nhttps://usegalaxy.org/\n, log in, then try these tutorials: \n\n\n\n\nIntroduction to Galaxy\n\n\nGalaxy histories\n\n\n\n\n\n\nRunning your own Galaxy server in the cloud\n\n\nIt is possible to run your own Galaxy instance using the Nectar cloud. \n\n\n\n\n\n\nTutorial to launch your own Galaxy\n\n\n\n\n\n\nNectar: https://nectar.org.au\n\n\n\n\n\n\nRunning Galaxy locally using Docker\n\n\nIt is usually preferable to use a docker Galaxy image rather than installing Galaxy itself locally, for tool depencies. \n\n\n\n\n\n\nThe docker container is at \nhttps://hub.docker.com/r/bgruening/galaxy-stable/\n\n\n\n\n\n\nDocker tutorial link\n\n\n\n\n\n\nRun with \ndocker run -p 80:80 bgruening/galaxy-stable\n\n\n\n\nIn a web browser, enter \"localhost\" in the address bar\n\n\nYour Galaxy should now be running.", 
+            "text": "The Galaxy Platform\n\n\n\n\n\nGalaxy is a web platform for bioinformatics analysis. \n\n\nWhich Galaxy should I use?\n\n\n\n\n\n\nThere are many different Galaxy servers - each one has a different web address.\n\n\n\n\n\n\nFor researchers based in Melbourne, Australia, we recommend you use \nGalaxy-Mel\n.\n\n\n\n\n\n\nThe main worldwide Galaxy server is \nhttps://usegalaxy.org/\n\n\n\n\n\n\nOther Galaxy servers are listed \nhere\n.\n\n\n\n\n\n\nCheck the policy for the server you are using so that you know how long your data will be kept. \n\n\n\n\n\n\nIf you use more than one Galaxy server (e.g. Galaxy-Mel and useGalaxy.org) you need to register and log in separately for each server. They don't talk to each other. \n\n\n\n\n\n\nTutorials\n\n\nGo to Galaxy-Mel and log in, then try these tutorials:\n\n\n\n\nIntroduction to Galaxy\n \n\n\nGalaxy Workflows\n \n\n\nOther MB tutorials, e.g. Assembly, RNA-seq, etc. \n\n\n\n\nGalaxy Training Network\n\n\nThe Galaxy Training Network hosts a large collection of useful training material \nhere\n.\n\n\nTo get started, go to \nhttps://usegalaxy.org/\n, log in, then try these tutorials: \n\n\n\n\nIntroduction to Galaxy\n\n\nGalaxy histories\n\n\n\n\n\n\nRunning your own Galaxy server in the cloud\n\n\nIt is possible to run your own Galaxy instance using the Nectar cloud. \n\n\n\n\n\n\nTutorial to launch your own Galaxy\n\n\n\n\n\n\nNectar: https://nectar.org.au\n\n\n\n\n\n\nRunning Galaxy locally using Docker\n\n\nIt is usually preferable to use a docker Galaxy image rather than installing Galaxy itself locally, to limit issues with tool dependencies. \n\n\n\n\n\n\nYou would need to have Docker installed: see the \nDocker page\n.\n\n\n\n\n\n\nTry the \nDocker tutorial\n.\n\n\n\n\n\n\nThe docker container for Galaxy is at \nhttps://hub.docker.com/r/bgruening/galaxy-stable/\n\n\n\n\n\n\nTo run:\n\n\n\n\nOpen a terminal window. \n\n\nType \ndocker run -p 80:80 bgruening/galaxy-stable\n\n\nIn a web browser, enter \"localhost\" in the address bar.\n\n\nYour Galaxy should now be running. \n\n\n\n\n\n\n\n\nTo close the container:\n\n\n\n\nOpen a new terminal window.\n\n\nType \ndocker ps\n to show running containers.\n\n\nFind the container ID.\n\n\nType \ndocker stop \nCONTAINER ID", 
             "title": "The Galaxy platform"
         }, 
         {
@@ -62,13 +97,33 @@
         }, 
         {
             "location": "/guides/galaxy/#running-galaxy-locally-using-docker", 
-            "text": "It is usually preferable to use a docker Galaxy image rather than installing Galaxy itself locally, for tool depencies.     The docker container is at  https://hub.docker.com/r/bgruening/galaxy-stable/    Docker tutorial link    Run with  docker run -p 80:80 bgruening/galaxy-stable   In a web browser, enter \"localhost\" in the address bar  Your Galaxy should now be running.", 
+            "text": "It is usually preferable to use a docker Galaxy image rather than installing Galaxy itself locally, to limit issues with tool dependencies.     You would need to have Docker installed: see the  Docker page .    Try the  Docker tutorial .    The docker container for Galaxy is at  https://hub.docker.com/r/bgruening/galaxy-stable/    To run:   Open a terminal window.   Type  docker run -p 80:80 bgruening/galaxy-stable  In a web browser, enter \"localhost\" in the address bar.  Your Galaxy should now be running.      To close the container:   Open a new terminal window.  Type  docker ps  to show running containers.  Find the container ID.  Type  docker stop  CONTAINER ID", 
             "title": "Running Galaxy locally using Docker"
         }, 
         {
             "location": "/guides/genome-assembly/", 
-            "text": "Genome assembly\n\n\nMicrobial\n\n\nEukaryote\n\n\nTutorials", 
+            "text": "Genome assembly\n\n\nA common project in bioinformatics is to assemble a genome. This means joining together all the pieces of the genome that were sequenced. \n\n\nMicrobial genome assembly\n\n\nBacteria have much smaller genomes than eukaryotes. \n\n\nTutorials \n\n\nEukaryotic genome assembly\n\n\nTutorials\n\n\nOrganelle genome assembly\n\n\nOrganelles are chloroplasts and mitochondria. These have their own genome, independent of the nuclear genome. \n\n\nTutorials", 
             "title": "Genome assembly"
+        }, 
+        {
+            "location": "/guides/genome-assembly/#genome-assembly", 
+            "text": "A common project in bioinformatics is to assemble a genome. This means joining together all the pieces of the genome that were sequenced.", 
+            "title": "Genome assembly"
+        }, 
+        {
+            "location": "/guides/genome-assembly/#microbial-genome-assembly", 
+            "text": "Bacteria have much smaller genomes than eukaryotes.   Tutorials", 
+            "title": "Microbial genome assembly"
+        }, 
+        {
+            "location": "/guides/genome-assembly/#eukaryotic-genome-assembly", 
+            "text": "Tutorials", 
+            "title": "Eukaryotic genome assembly"
+        }, 
+        {
+            "location": "/guides/genome-assembly/#organelle-genome-assembly", 
+            "text": "Organelles are chloroplasts and mitochondria. These have their own genome, independent of the nuclear genome.   Tutorials", 
+            "title": "Organelle genome assembly"
         }, 
         {
             "location": "/guides/RNA-seq/", 
@@ -94,56 +149,6 @@
             "location": "/guides/microbial_genomics/", 
             "text": "Sepsis tutorials:\n\n\nAssembly\n\n\nAnnotation\n\n\nVariant Calling\n\n\nhttps://www.melbournebioinformatics.org.au/project/microbial-genomics/", 
             "title": "Microbial genomics"
-        }, 
-        {
-            "location": "/guides/data-storage/", 
-            "text": "Where should I store my data?\n\n\n\n\nLarge datasets are difficult to store on your local computer and share with colleagues. \n\n\nA good option is to store data in the cloud. \n\n\n\n\nData storage options\n\n\n\n\n\n\nLocally on your computer. \n\n\n\n\n\n\nYour departmental server, but check storage limits and policy.\n\n\n\n\n\n\nOn a Galaxy server, but check storage limits and policies. \n\n\n\n\nClick \nhere\n for a guide to getting started with Galaxy. \n\n\n\n\n\n\n\n\nOn the Nectar cloud. \n\n\n\n\nNectar is an Australian organization that provides a cloud for data storage and analysis. \n\n\nNectar link: \nnectar.org.au\n\n\nClick \nhere\n for information about storage options and tools on Nectar. \n\n\nClick \nhere\n for an introduction to cloud storage on Nectar. \n\n\n\n\n\n\n\n\nData access\n\n\n\n\nGenomeSpace is a web interface that provides links between data storage and platforms: \nGenomeSpace tutorial\n.", 
-            "title": "Data storage"
-        }, 
-        {
-            "location": "/guides/data-storage/#where-should-i-store-my-data", 
-            "text": "Large datasets are difficult to store on your local computer and share with colleagues.   A good option is to store data in the cloud.", 
-            "title": "Where should I store my data?"
-        }, 
-        {
-            "location": "/guides/data-storage/#data-storage-options", 
-            "text": "Locally on your computer.     Your departmental server, but check storage limits and policy.    On a Galaxy server, but check storage limits and policies.    Click  here  for a guide to getting started with Galaxy.      On the Nectar cloud.    Nectar is an Australian organization that provides a cloud for data storage and analysis.   Nectar link:  nectar.org.au  Click  here  for information about storage options and tools on Nectar.   Click  here  for an introduction to cloud storage on Nectar.", 
-            "title": "Data storage options"
-        }, 
-        {
-            "location": "/guides/data-storage/#data-access", 
-            "text": "GenomeSpace is a web interface that provides links between data storage and platforms:  GenomeSpace tutorial .", 
-            "title": "Data access"
-        }, 
-        {
-            "location": "/guides/data-analysis/", 
-            "text": "How can I analyse my data?\n\n\nThe Galaxy Platform\n\n\nTo analyse data, we recommend getting started with Galaxy - a free, web-based bioinformatics platform. See our full guide \nhere\n.\n\n\nYour local computer\n\n\nInstall and run tools locally. We recommend these tutorials to get started: \n\n\n\n\nUnix\n\n\nPython\n\n\nGit\n\n\nDocker\n\n\n\n\nLaunch a Linux machine in the cloud\n\n\nUse a virtual machine. \n\n\nFor example, you could use the Genomics Virtual Lab (the GVL) in the Nectar cloud. \n\n\n\n\nTutorial to launch your own Galaxy\n\n\nNectar: https://nectar.org.au\n\n\n\n\nA high performance computer (cluster)\n\n\nCheck this section with Andrew Isaac\n\n\nMelbourne Bioinformatics runs large clusters on which (unimelb only?) researchers can run analyses. \n\n\nFor detailed information see the documentation \nhere\n. \n\n\n\n\n\n\nTo apply for usage, click \nhere\n\n\n\n\n\n\nFor information about logging on, click \nhere\n.\n\n\n\n\n\n\nFor information about running jobs, click \nhere\n. \n\n\n\n\n\n\nAvailable systems are listed [here[]]\n\n\n\n\n\n\nsystems \nhttps://www.melbournebioinformatics.org.au/capabilities/access-to-high-end-systems/", 
-            "title": "Data analysis"
-        }, 
-        {
-            "location": "/guides/data-analysis/#how-can-i-analyse-my-data", 
-            "text": "", 
-            "title": "How can I analyse my data?"
-        }, 
-        {
-            "location": "/guides/data-analysis/#the-galaxy-platform", 
-            "text": "To analyse data, we recommend getting started with Galaxy - a free, web-based bioinformatics platform. See our full guide  here .", 
-            "title": "The Galaxy Platform"
-        }, 
-        {
-            "location": "/guides/data-analysis/#your-local-computer", 
-            "text": "Install and run tools locally. We recommend these tutorials to get started:    Unix  Python  Git  Docker", 
-            "title": "Your local computer"
-        }, 
-        {
-            "location": "/guides/data-analysis/#launch-a-linux-machine-in-the-cloud", 
-            "text": "Use a virtual machine.   For example, you could use the Genomics Virtual Lab (the GVL) in the Nectar cloud.    Tutorial to launch your own Galaxy  Nectar: https://nectar.org.au", 
-            "title": "Launch a Linux machine in the cloud"
-        }, 
-        {
-            "location": "/guides/data-analysis/#a-high-performance-computer-cluster", 
-            "text": "Check this section with Andrew Isaac  Melbourne Bioinformatics runs large clusters on which (unimelb only?) researchers can run analyses.   For detailed information see the documentation  here .     To apply for usage, click  here    For information about logging on, click  here .    For information about running jobs, click  here .     Available systems are listed [here[]]    systems \nhttps://www.melbournebioinformatics.org.au/capabilities/access-to-high-end-systems/", 
-            "title": "A high performance computer (cluster)"
         }, 
         {
             "location": "/guides/more-help/", 

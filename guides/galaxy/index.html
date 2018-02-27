@@ -230,6 +230,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../computing/" title="Computing" class="md-nav__link">
+      Computing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -358,30 +370,6 @@
   <li class="md-nav__item">
     <a href="../microbial_genomics/" title="Microbial genomics" class="md-nav__link">
       Microbial genomics
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../data-storage/" title="Data storage" class="md-nav__link">
-      Data storage
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../data-analysis/" title="Data analysis" class="md-nav__link">
-      Data analysis
     </a>
   </li>
 
@@ -1076,19 +1064,35 @@
 </li>
 </ul>
 <h2 id="running-galaxy-locally-using-docker">Running Galaxy locally using Docker</h2>
-<p>It is usually preferable to use a docker Galaxy image rather than installing Galaxy itself locally, for tool depencies. </p>
+<p>It is usually preferable to use a docker Galaxy image rather than installing Galaxy itself locally, to limit issues with tool dependencies. </p>
 <ul>
 <li>
-<p>The docker container is at <a href="https://hub.docker.com/r/bgruening/galaxy-stable/">https://hub.docker.com/r/bgruening/galaxy-stable/</a></p>
+<p>You would need to have Docker installed: see the <a href="https://www.docker.com/">Docker page</a>.</p>
 </li>
 <li>
-<p><a href="../../tutorials/docker/docker/">Docker tutorial link</a></p>
+<p>Try the <a href="../../tutorials/docker/docker/">Docker tutorial</a>.</p>
 </li>
 <li>
-<p>Run with <code>docker run -p 80:80 bgruening/galaxy-stable</code></p>
+<p>The docker container for Galaxy is at <a href="https://hub.docker.com/r/bgruening/galaxy-stable/">https://hub.docker.com/r/bgruening/galaxy-stable/</a></p>
 </li>
-<li>In a web browser, enter "localhost" in the address bar</li>
+<li>
+<p>To run:</p>
+<ul>
+<li>Open a terminal window. </li>
+<li>Type <code>docker run -p 80:80 bgruening/galaxy-stable</code></li>
+<li>In a web browser, enter "localhost" in the address bar.</li>
 <li>Your Galaxy should now be running. </li>
+</ul>
+</li>
+<li>
+<p>To close the container:</p>
+<ul>
+<li>Open a new terminal window.</li>
+<li>Type <code>docker ps</code> to show running containers.</li>
+<li>Find the container ID.</li>
+<li>Type <code>docker stop &lt;CONTAINER ID&gt;</code></li>
+</ul>
+</li>
 </ul>
                 
                   
