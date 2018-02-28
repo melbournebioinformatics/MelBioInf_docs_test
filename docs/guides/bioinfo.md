@@ -28,5 +28,5 @@ Bioinformatics is the analysis of biologial data using computational methods. It
 
 - Bioinformatics problem solving challenges: [www.rosalind.info](www.rosalind.info) 
 
-- A selelection of key journal papers published last year in [BMC Bioinformatics](http://blogs.biomedcentral.com/bmcseriesblog/2018/01/24/a-year-in-bioinformatics/).
+- A selection of key journal papers published last year in [BMC Bioinformatics](http://blogs.biomedcentral.com/bmcseriesblog/2018/01/24/a-year-in-bioinformatics/).
 

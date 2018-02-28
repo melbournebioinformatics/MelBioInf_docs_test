@@ -1,7 +1,4 @@
 
-
-
-
 Sepsis tutorials:
 
 Assembly
