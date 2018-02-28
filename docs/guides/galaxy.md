@@ -3,7 +3,7 @@
 <!-- ![Galaxy logo](media/galaxy_logo.png) -->
 
 
-Galaxy is a web platform for bioinformatics analysis. 
+Galaxy is a web platform for bioinformatics analysis. The platform has the capability to run complex workflows in a user-friendly interface, making it suitable for both beginners and more advanced users. 
 
 ## Which Galaxy should I use? 
 
@@ -21,23 +21,15 @@ Galaxy is a web platform for bioinformatics analysis.
 
 ## Tutorials
 
-Go to Galaxy-Mel and log in, then try these tutorials:
+To get started, try: 
 
 * [Introduction to Galaxy](../tutorials/galaxy_101/galaxy_101.md) 
 * [Galaxy Workflows](../tutorials/galaxy-worklows/galaxy-workflows) 
-* Other MB tutorials, e.g. Assembly, RNA-seq, etc. 
+* Many of our other tutorials also use Galaxy, such as [RNA-seq](../tutorials/rna_seq_dge_basic/rna_seq_basic_tutorial.md) and [variant calling](../tutorials/variant_calling_galaxy_1/variant_calling_galaxy_1.md). 
 
 ## Galaxy Training Network
 
-The Galaxy Training Network hosts a large collection of useful training material [here](http://galaxyproject.github.io/training-material/).
-
-To get started, go to [https://usegalaxy.org/](https://usegalaxy.org/), log in, then try these tutorials: 
-
-* [Introduction to Galaxy](http://galaxyproject.github.io/training-material/topics/introduction/tutorials/galaxy-intro-101/tutorial.html)
-* [Galaxy histories](http://galaxyproject.github.io/training-material/topics/introduction/tutorials/galaxy-intro-history/tutorial.html)
-
-[![GTN logo](media/GTN_logo.png)](https://galaxyproject.org/teach/gtn/)
-
+The Galaxy Training Network hosts a large collection of useful training material at [galaxyproject.org/learn](https://galaxyproject.org/learn/). These tutorials run on the [usegalaxy.org server](https://usegalaxy.org/).
 
 ## Running your own Galaxy server in the cloud
 
