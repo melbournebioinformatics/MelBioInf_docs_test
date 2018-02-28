@@ -50,13 +50,13 @@ It is usually preferable to use a docker Galaxy image rather than installing Gal
 - The docker container for Galaxy is at [https://hub.docker.com/r/bgruening/galaxy-stable/](https://hub.docker.com/r/bgruening/galaxy-stable/)
 
 - To run:
-    - Open a terminal window. 
+    - Mac: open a terminal window; Windows: download PuTTY, a terminal emulator.
     - Type `docker run -p 80:80 bgruening/galaxy-stable`
     - In a web browser, enter "localhost" in the address bar.
     - Your Galaxy should now be running. 
 
 - To close the container:
-    - Open a new terminal window.
+    - Open a new terminal (or equivalent) window.
     - Type `docker ps` to show running containers.
     - Find the container ID.
     - Type `docker stop <CONTAINER ID>`
