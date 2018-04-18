@@ -10,4 +10,5 @@ install:
  - pip install -r requirements.txt
 
 script:
+ - mkdocs --version
  - mkdocs gh-deploy
