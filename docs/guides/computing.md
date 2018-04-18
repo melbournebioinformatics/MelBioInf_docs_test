@@ -50,6 +50,8 @@ For detailed information see the documentation [here](https://www.melbournebioin
 
 Large datasets may be difficult to store (and share) on your local computer. 
 
+Research Platforms has advice about data storage and management [here](https://research.unimelb.edu.au/infrastructure/research-platform-services/services/data-storage-management).
+
 An alternative option is using storage on the Nectar cloud. 
 
 - Nectar is an Australian organization that provides a cloud for data storage and analysis. 
