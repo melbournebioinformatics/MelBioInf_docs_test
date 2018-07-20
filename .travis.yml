@@ -4,11 +4,14 @@ dist: trusty
 language: python
 
 python:
-  - "3.6"
+   - "3.6"
 
 install:
- - pip install -r requirements.txt
+  - pip install -r requirements.txt
 
 script:
- - mkdocs --version
- - mkdocs gh-deploy
+  - git config user.name "${GH_COMMITER_NAME}";
+  - git config user.email "${GH_COMMITER_EMAIL}";
+  - git remote add authenticated "https://${GH_AUTH_TOKEN}@github.com/python-madrid/learn-doc.git";
+  - git fetch gh-token && git fetch gh-token gh-pages:gh-pages;
+  - mkdocs gh-deploy --clean --remote-name authenticated;
