@@ -8,6 +8,7 @@ script:
 - git config user.name "${GH_COMMITER_NAME}"; # maybe try travis@travis-ci.org
 - git config user.email "${GH_COMMITER_EMAIL}";
 - git remote add authenticated "https://${GH_TOKEN}@github.com/claresloggett/MelBioInf_docs_test";
+- git fetch authenticated && git fetch authenticated gh-pages:gh-pages;
 - mkdocs gh-deploy --clean --remote-name authenticated;
 env:
   global:
