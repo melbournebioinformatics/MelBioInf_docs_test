@@ -1,17 +1,14 @@
-
 dist: trusty
-
 language: python
-
 python:
-   - "3.6"
-
+- '3.6'
 install:
-  - pip install -r requirements.txt
-
+- pip install -r requirements.txt
 script:
-  - git config user.name "${GH_COMMITER_NAME}";
-  - git config user.email "${GH_COMMITER_EMAIL}";
-  - git remote add authenticated "https://${GH_AUTH_TOKEN}@github.com/claresloggett/MelBioInf_docs_test";
-  - git fetch gh-token && git fetch gh-token gh-pages:gh-pages;
-  - mkdocs gh-deploy --clean --remote-name authenticated;
+- git config user.name "${GH_COMMITER_NAME}"; # maybe try travis@travis-ci.org
+- git config user.email "${GH_COMMITER_EMAIL}";
+- git remote add authenticated "https://${GH_AUTH_TOKEN}@github.com/claresloggett/MelBioInf_docs_test";
+- mkdocs gh-deploy --clean --remote-name authenticated;
+env:
+  global:
+  - secure: qV1/hmXYWzN7Riq4LWCZBFaq5vSPPG3zFT5G+EG0V0dGFqn7pou8cG3AJQJrBx2FaV3vMUJOZ/znMHNHiNtL3pllLaXQn9Fnbqd+ZIyUHN8nMMDWbYbUs3ClXJN1YFRlwJEK3dbhzuBfKenoI5bK6hJ88/XT7sE+4csEB/ObsWOGZK8Im6oF8Z4srRbLS2sMRU3tRdgGsur/Tx2L35GOK0Gd0veTQ4HGuCBWkaz6P3vSghNHUaBINz7g63SIbtSi9DN9eoZPxtmjjo2K0F7wKbHdRgIimU8EjqT9Qc9Fp8LYYiwPgiJZl3vkMeGzrSxEGiUEdqP1OL4M+a4m5FaBhFBTq+ygeRljOfn+PbXkb5msQNV82c/jTA5/o+lALgAdtzuprM3P6Btw0Opp6OC7Vpxdj6pEvP83WSbjgxKxs6zAJiCHUEpsilcWFVn55MT839dc2601NUTiXAjn0vXli19mNFJxPA4nhsLkuyBv9HDv9atju5Aa8d5mh+1cRqqKnEgtg48xRu0Ie3K5DM1OsPBAiECtin0L792+zlx3q21JOnSdT8DbjXhgPf4qhp80JlyJFmfSsJKdd0VjxPXF2qyQ9RrOQ1hKwz03Sf8/afcw2mubqVmNswQxE4+ZwRPKa8MRtpjrCnw08zvNazQs2Q6a9MmeD9F+3h8nc5f293M=
