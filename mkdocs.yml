@@ -73,6 +73,6 @@ extra_templates: [
 ]
 markdown_extensions: [
   'markdown_include.include',
-  'showable',
+  'mdx_showable',
   'markdown.extensions.fenced_code',
 ]
