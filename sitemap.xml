@@ -1,188 +1,198 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    
     <url>
-     <loc>/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
-        
     <url>
-     <loc>/guides/bioinfo/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/guides/computing/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/guides/galaxy/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/guides/genome-assembly/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/guides/RNA-seq/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/guides/variant-calling/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/guides/cancer-genomics/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/guides/microbial_genomics/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/guides/more-help/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
-        
     <url>
-     <loc>/tutorials/python_overview/python_overview/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/tutorials/using_git/Using_Git/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/tutorials/hpc/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/tutorials/unix/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/tutorials/gvl_launch/gvl_launch/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/tutorials/galaxy_101/galaxy_101/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc></loc>
-     <lastmod></lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/tutorials/genomespace/genomespace/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/tutorials/docker/docker/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
-        
     <url>
-     <loc>/tutorials/variant_calling_galaxy_1/variant_calling_galaxy_1/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc></loc>
-     <lastmod></lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc></loc>
-     <lastmod></lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/tutorials/rna_seq_dge_advanced/rna_seq_advanced_tutorial/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/tutorials/rna_seq_exp_design/rna_seq_experimental_design/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc></loc>
-     <lastmod></lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
-        
     <url>
-     <loc></loc>
-     <lastmod></lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
-        
     <url>
-     <loc>/tutorials/assembly/assembly-protocol/</loc>
-     <lastmod>2018-02-28</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2019-06-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
 </urlset>
