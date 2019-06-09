@@ -1,0 +1,15 @@
+dist: trusty
+language: python
+python:
+- '3.6'
+install:
+- pip install -r requirements.txt
+script:
+- git config user.name "Travis CI"
+- git config user.email "travis@travis-ci.org";
+- git remote add authenticated "https://${GH_TOKEN}@github.com/melbournebioinformatics/MelBioInf_docs_test";
+- git fetch authenticated && git fetch authenticated gh-pages:gh-pages;
+- mkdocs gh-deploy --clean --remote-name authenticated;
+env:
+  global:
+    secure: PIEwCG+4cqohbp80Cm4KKU2JdanbtJAFNz+ujfHhmczVYEFJH59uo1Cctx74vW1Vix6qSSW7E1ndva6oB+4oW2/QsZiUK9U/lNzr2ytQCkIVLl651QFvQzuPm5whmocwN5bxbtpxgXs0+NiwFgS/797Qjt59J6fiCpOUVxec5m207LyGXyerM9YbTYqp49dcta3UUnFq9g2iiGP9IBLnWJ0pKhGQ9cwCZJPZ8JZLL+yumqy1WkXFTiKmQJIKWwah10ZTviZKIPJA4an0xU2NPKtuSTqEwpnWVA1ZlqzrftFOXSb0eHS74k2V2/8JRxq/d7E60mZQDvLRfH7z7ZKEaq9Q7Ylswqv5jKVRAtz71Le4jXw46leqod6aLTgW1fxDD89vgG07XO0BiJZ7XtYi6AQnrNKDHHdsfAnRYccmZNbcbYtI5R6ef8oKZHeAb96VSckMLX6zGZW4ZfDbtJ40O5DsI96F85J6N6NUpCtS6p2KckZ+vxtoQIv1wIFpx9bsEp7W+cgN5VsyJaCmLZX+IhQ21kWYgktyY9C1o/7OIgR89RvVLKuMRoNTJqa+sOyZbYakepI9N4ptnOREidiq1YVTNNDrETPPYFnK3e17JS/GaJtjuZHVeWkKaGD2gF6CCsKIU98xeYKrddxiZ2lqJN5kj2sKiSMkpL6GLP3X7yI=
