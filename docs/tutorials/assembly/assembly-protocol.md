@@ -9,7 +9,7 @@
 ## *Protocol*
 
 
-Written and maintained by [Simon Gladman](mailto:simon.gladman@unimelb.edu.au) - Melbourne Bioinformatics (formerly VLSCI)
+Written and maintained by [Simon Gladman](mailto:simon.gladman@unimelb.edu.au) - Melbourne Bioinformatics (formerly VLSCI).
 
 ## Protocol Overview / Introduction
 
