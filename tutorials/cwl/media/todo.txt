@@ -1,2 +1,0 @@
-* Add reference to 7 Bridges tool definitions
-* Add answers to exercises
